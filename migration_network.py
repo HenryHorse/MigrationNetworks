@@ -62,18 +62,54 @@ for line in countries_list:
         G.add_edge(origin_code, dest_code, weight=num_migrants)
 
 
+# CLUSTERING COEFFICIENT
+clustering_directed = nx.clustering(G, weight='weight')
 
-pos = nx.spring_layout(G)  # positions for all nodes
+# Compute the average clustering coefficient across the entire graph
+average_clustering_directed = nx.average_clustering(G, weight='weight')
 
-# nodes
-nx.draw_networkx_nodes(G, pos, node_size=700)
+#print("Directed Clustering Coefficient per Node:")
+#print(clustering_directed)
+print("\nAverage Directed Clustering Coefficient:")
+print(average_clustering_directed)
 
-# edges
-edges = nx.draw_networkx_edges(G, pos, width=6)
+# DEGREE DISTRIBUTION (in, out, total)
 
-# labels
-nx.draw_networkx_labels(G, pos, font_size=20, font_family='sans-serif')
+in_degrees = dict(G.in_degree())  # Returns a dictionary with node:in-degree pairs
+out_degrees = dict(G.out_degree())  # Returns a dictionary with node:out-degree pairs
+total_degrees = dict(G.degree())  # Returns a dictionary with node:total-degree (in + out) pairs
+
+in_degree_values = list(in_degrees.values())
+out_degree_values = list(out_degrees.values())
+total_degree_values = list(total_degrees.values())
+
+# Plot total degree distribution
+plt.subplot(133)  # 1 row, 3 columns, 3rd subplot
+plt.hist(total_degree_values, bins=range(max(total_degree_values)+1), color='red', alpha=0.7)
+plt.title('Total Degree Distribution')
+plt.xlabel('Degree')
+plt.ylabel('Frequency')
+
+plt.tight_layout()
+plt.show()
+
+
+
+
+# Choose a layout that provides better spacing, and adjust parameters if necessary
+pos = nx.spring_layout(G, scale=2)  # You can increase the scale to spread out nodes
+plt.figure(figsize=(15, 15))  # Large figure size to accommodate the graph
+# Nodes
+node_size = max(100, 7000 / len(G.nodes()))  # Avoid too large node sizes for large graphs
+nx.draw_networkx_nodes(G, pos, node_size=node_size, node_color='skyblue', alpha=0.6)
+# Edges
+edge_widths = [0.005 * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
+nx.draw_networkx_edges(G, pos, width=edge_widths, alpha=0.5, edge_color='gray')
+# Labels
+font_size = max(8, 100 / len(G.nodes())**0.5)  # Smaller font size for larger graphs
+nx.draw_networkx_labels(G, pos, font_size=font_size, font_family='sans-serif')
 
 plt.axis('off')  # Turn off the axis
+plt.title('Network of Migration (1990)')
 plt.show()
 
