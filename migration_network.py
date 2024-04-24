@@ -62,8 +62,21 @@ for line in countries_list:
         G.add_edge(origin_code, dest_code, weight=num_migrants)
 
 
+# BETWEENNESS CENTRALITY
+betweenness = nx.betweenness_centrality(G)
+sorted_betweenness = sorted(betweenness.items(), key=lambda item: item[1], reverse=True)
+with open("bc_out.txt", "w") as file:
+    for node, bc in sorted_betweenness:
+        file.write(f"{G.nodes[node]['name']}: {bc}\n")
+
+
 # CLUSTERING COEFFICIENT
 clustering_directed = nx.clustering(G, weight='weight')
+sorted_clustering = sorted(clustering_directed.items(), key=lambda item: item[1], reverse=True)
+
+with open("cc_out.txt", "w") as file:
+    for node, clustering in sorted_clustering:
+        file.write(f"{G.nodes[node]['name']}: {clustering}\n")
 
 # Compute the average clustering coefficient across the entire graph
 average_clustering_directed = nx.average_clustering(G, weight='weight')
