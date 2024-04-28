@@ -1,0 +1,234 @@
+Burundi,-3.373056,29.918886
+Belgium,50.503887,4.469936
+Democratic Republic of the Congo,-4.038333,21.758664
+France*,46.227638,2.213749
+Kenya,-0.023559,37.906193
+Rwanda,-1.940278,29.873888
+Uganda,1.373333,32.290275
+United Republic of Tanzania*,-6.369028,34.888822
+Comoros,-11.875001,43.872219
+Madagascar,-18.766947,46.869107
+Réunion*
+Djibouti,11.825138,42.590275
+Ethiopia,9.145,40.489673
+Somalia,5.152149,46.199616
+Yemen,15.552727,48.516388
+Eritrea,15.179384,39.782334
+Angola,-11.202692,17.873887
+China*,35.86166,104.195397
+India,20.593684,78.96288
+Malawi,-13.254308,34.301525
+Mozambique,-18.665695,35.529562
+South Africa,-30.559482,22.937506
+Zimbabwe,-19.015438,29.154857
+South Sudan
+Sudan,12.862807,30.217636
+United Kingdom*,55.378051,-3.435973
+Zambia,-13.133897,27.849332
+Namibia,-22.95764,18.49041
+Congo,-0.228021,15.827659
+Mauritius*,-20.348404,57.552152
+Bangladesh,23.684994,90.356331
+Canada,56.130366,-106.346771
+Sri Lanka,7.873054,80.771797
+Germany,51.165691,10.451526
+"   China Hong Kong SAR*",22.396428,114.109497
+Ireland,53.41291,-8.24389
+Italy,41.87194,12.56738
+Japan,36.204824,138.252924
+Malaysia*,4.210484,101.975766
+Pakistan,30.375321,69.345116
+Russian Federation,61.52401,105.318756
+Seychelles,-4.679574,55.491977
+Spain*,40.463667,-3.74922
+Switzerland,46.818188,8.227512
+United States of America*,37.09024,-95.712891
+Mayotte*,-12.8275,45.166244
+Cabo Verde
+Lesotho,-29.609988,28.233608
+Nigeria,9.081999,8.675277
+Portugal,39.399872,-8.224454
+Australia*,-25.274398,133.775136
+Cuba,21.521757,-77.781167
+Indonesia,-0.789275,113.921327
+Maldives,3.202778,73.22068
+Nepal,28.394857,84.124008
+Philippines,12.879721,121.774017
+Thailand,15.870032,100.992541
+Algeria,28.033886,1.659626
+Denmark*
+Gambia
+Ghana
+Greece
+Hungary
+Côte d'Ivoire
+Dem. People's Republic of Korea
+Republic of Korea
+Libya
+Mauritania
+Netherlands*
+Norway*
+Senegal
+Sweden
+Togo
+Egypt
+Botswana
+Eswatini
+Cameroon
+Mali
+Chad
+Guinea
+Sao Tome and Principe
+Central African Republic
+Austria
+Cyprus*
+Slovenia
+Turkey
+Gabon
+Niger
+Benin
+Equatorial Guinea
+Lebanon
+Israel
+Morocco
+Syrian Arab Republic
+Tunisia
+Burkina Faso
+State of Palestine*
+Iraq
+Jordan
+Kuwait
+Saudi Arabia
+Western Sahara
+Afghanistan
+Albania
+Antigua and Barbuda
+Azerbaijan*
+Argentina
+Bahamas
+Bahrain
+Armenia
+Bosnia and Herzegovina
+Brazil
+Brunei Darussalam
+Bulgaria
+Myanmar
+Belarus
+Chile
+Colombia
+Croatia
+Czechia
+Ecuador
+El Salvador
+Estonia
+Finland*
+Gibraltar*
+Guatemala
+Iran (Islamic Republic of)
+Kazakhstan
+Kyrgyzstan
+Liberia
+Mexico
+Monaco
+Mongolia
+Republic of Moldova*
+Oman
+New Zealand*
+Poland
+Guinea-Bissau
+Qatar
+Romania
+Sierra Leone
+Singapore
+Slovakia
+Tajikistan
+United Arab Emirates
+Turkmenistan
+Ukraine*
+North Macedonia
+Uzbekistan
+Venezuela (Bolivarian Republic of)
+Luxembourg
+Barbados
+Bermuda*
+Bolivia (Plurinational State of)
+British Virgin Islands*
+Fiji
+Guyana
+Iceland
+Jamaica
+Lao People's Democratic Republic
+Latvia
+Lithuania
+Malta
+Nauru
+Nicaragua
+Niue*
+Northern Mariana Islands*
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Saint Helena*
+Saint Kitts and Nevis
+Serbia*
+Trinidad and Tobago
+Uruguay
+Viet Nam
+Timor-Leste
+United States Virgin Islands*
+Georgia*
+"   China Macao SAR*"
+Cambodia
+Costa Rica
+Guam*
+Aruba*
+Palau
+Puerto Rico*
+Suriname
+Bhutan
+Dominican Republic
+Haiti
+Honduras
+Guadeloupe*
+Anguilla*
+Greenland*
+Kiribati
+Liechtenstein
+Montenegro
+Samoa
+San Marino
+Turks and Caicos Islands*
+Tuvalu
+Andorra
+Belize
+Tonga
+Vanuatu
+Grenada
+American Samoa*
+Channel Islands*
+Dominica
+Faroe Islands*
+French Guiana*
+French Polynesia*
+Marshall Islands
+Martinique*
+Saint Lucia
+Saint Vincent and the Grenadines
+Solomon Islands
+Cayman Islands*
+Falkland Islands (Malvinas)*
+New Caledonia*
+Isle of Man*
+Montserrat*
+Cook Islands*
+Holy See*
+Saint Pierre and Miquelon*
+Tokelau*
+Wallis and Futuna Islands*
+Micronesia (Fed. States of)
+"   Bonaire Sint Eustatius and Saba*"
+Curaçao*
+Sint Maarten (Dutch part)*
+
+

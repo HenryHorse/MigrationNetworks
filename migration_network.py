@@ -12,6 +12,7 @@ regions you don't want to include, exclude the element
 
 import networkx as nx
 import matplotlib.pyplot as plt
+import sys
 
 f = open("undesa_pd_2020_ims_stock_by_sex_destination_and_origin.csv", "r")
 csv_lines = f.readlines()
@@ -46,7 +47,22 @@ for line in split_lines:
 # Indices 7-13 are the years from 1990-2020 in increments of 5 years
 
 G = nx.DiGraph()
-year_index = 7 # 1990
+year = sys.argv[1]
+if (year == "1990"):
+    year_index = 7 # 1990
+elif (year == "1995"):
+    year_index = 8 # 1995
+elif (year == "2000"):
+    year_index = 9 # 2000
+elif (year == "2005"):
+    year_index = 10 # 2005
+elif (year == "2010"):
+    year_index = 11 # 2010
+elif (year == "2015"):
+    year_index = 12 # 2015
+elif (year == "2020"):
+    year_index = 13 # 2020
+
 for line in countries_list:
     dest_name = line[1].strip()
     dest_code = line[3].strip()
@@ -134,6 +150,6 @@ font_size = max(8, 100 / len(G.nodes())**0.5)  # Smaller font size for larger gr
 nx.draw_networkx_labels(G, pos, font_size=font_size, font_family='sans-serif')
 
 plt.axis('off')  # Turn off the axis
-plt.title('Network of Migration (1990)')
+plt.title('Network of Migration (' + sys.argv[1] + ')')
 plt.show()
 
