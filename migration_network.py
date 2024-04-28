@@ -96,17 +96,28 @@ in_degree_values = list(in_degrees.values())
 out_degree_values = list(out_degrees.values())
 total_degree_values = list(total_degrees.values())
 
-# Plot total degree distribution
-plt.subplot(133)  # 1 row, 3 columns, 3rd subplot
-plt.hist(total_degree_values, bins=range(max(total_degree_values)+1), color='red', alpha=0.7)
-plt.title('Total Degree Distribution')
-plt.xlabel('Degree')
+
+# Set up the plot with subplots
+plt.figure(figsize=(14, 6))  # Wider figure to accommodate two subplots
+
+# Plot in-degree distribution
+plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st subplot
+plt.hist(in_degree_values, bins=range(min(in_degree_values), max(in_degree_values) + 2), color='green', alpha=0.7, edgecolor='black')
+plt.title('In-Degree Distribution')
+plt.xlabel('In-Degree')
 plt.ylabel('Frequency')
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
 
-plt.tight_layout()
+# Plot out-degree distribution
+plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd subplot
+plt.hist(out_degree_values, bins=range(min(out_degree_values), max(out_degree_values) + 2), color='red', alpha=0.7, edgecolor='black')
+plt.title('Out-Degree Distribution')
+plt.xlabel('Out-Degree')
+plt.ylabel('Frequency')
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+plt.tight_layout()  # Adjusts subplots to fit into figure area.
 plt.show()
-
-
 
 
 # Choose a layout that provides better spacing, and adjust parameters if necessary
