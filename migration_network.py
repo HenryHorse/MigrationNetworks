@@ -14,6 +14,9 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import sys
 
+MIN_EDGE_WEIGHT = 100000
+BIN_SIZE = 5
+
 f = open("undesa_pd_2020_ims_stock_by_sex_destination_and_origin.csv", "r")
 csv_lines = f.readlines()
 csv_lines = csv_lines[11:]
@@ -75,7 +78,8 @@ for line in countries_list:
         G.add_node(dest_code, name=dest_name)
         G.add_node(origin_code, name=origin_name)
 
-        G.add_edge(origin_code, dest_code, weight=num_migrants)
+        if (num_migrants > MIN_EDGE_WEIGHT):
+            G.add_edge(origin_name, dest_name, weight=num_migrants)
 
 
 # BETWEENNESS CENTRALITY
@@ -83,7 +87,7 @@ betweenness = nx.betweenness_centrality(G)
 sorted_betweenness = sorted(betweenness.items(), key=lambda item: item[1], reverse=True)
 with open("bc_out.txt", "w") as file:
     for node, bc in sorted_betweenness:
-        file.write(f"{G.nodes[node]['name']}: {bc}\n")
+        file.write(f"{G.nodes[node]}: {bc}\n")
 
 
 # CLUSTERING COEFFICIENT
@@ -92,7 +96,7 @@ sorted_clustering = sorted(clustering_directed.items(), key=lambda item: item[1]
 
 with open("cc_out.txt", "w") as file:
     for node, clustering in sorted_clustering:
-        file.write(f"{G.nodes[node]['name']}: {clustering}\n")
+        file.write(f"{G.nodes[node]}: {clustering}\n")
 
 # Compute the average clustering coefficient across the entire graph
 average_clustering_directed = nx.average_clustering(G, weight='weight')
@@ -118,7 +122,7 @@ plt.figure(figsize=(14, 6))  # Wider figure to accommodate two subplots
 
 # Plot in-degree distribution
 plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st subplot
-plt.hist(in_degree_values, bins=range(min(in_degree_values), max(in_degree_values) + 2), color='green', alpha=0.7, edgecolor='black')
+plt.hist(in_degree_values, bins=range(0, max(in_degree_values) + 2, BIN_SIZE), color='green', alpha=0.7, edgecolor='black')
 plt.title('In-Degree Distribution')
 plt.xlabel('In-Degree')
 plt.ylabel('Frequency')
@@ -126,7 +130,7 @@ plt.grid(True, which='both', linestyle='--', linewidth=0.5)
 
 # Plot out-degree distribution
 plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd subplot
-plt.hist(out_degree_values, bins=range(min(out_degree_values), max(out_degree_values) + 2), color='red', alpha=0.7, edgecolor='black')
+plt.hist(out_degree_values, bins=range(0, max(out_degree_values) + 2, BIN_SIZE), color='red', alpha=0.7, edgecolor='black')
 plt.title('Out-Degree Distribution')
 plt.xlabel('Out-Degree')
 plt.ylabel('Frequency')
@@ -137,14 +141,14 @@ plt.show()
 
 
 # Choose a layout that provides better spacing, and adjust parameters if necessary
-pos = nx.spring_layout(G, scale=2)  # You can increase the scale to spread out nodes
+pos = nx.spring_layout(G, scale=20)  # You can increase the scale to spread out nodes
 plt.figure(figsize=(15, 15))  # Large figure size to accommodate the graph
 # Nodes
 node_size = max(100, 7000 / len(G.nodes()))  # Avoid too large node sizes for large graphs
 nx.draw_networkx_nodes(G, pos, node_size=node_size, node_color='skyblue', alpha=0.6)
 # Edges
 edge_widths = [0.005 * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
-nx.draw_networkx_edges(G, pos, width=edge_widths, alpha=0.5, edge_color='gray')
+nx.draw_networkx_edges(G, pos, width=edge_widths, alpha=0.5, edge_color='black')
 # Labels
 font_size = max(8, 100 / len(G.nodes())**0.5)  # Smaller font size for larger graphs
 nx.draw_networkx_labels(G, pos, font_size=font_size, font_family='sans-serif')
