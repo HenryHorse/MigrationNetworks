@@ -1,280 +1,171 @@
-{}: 0.06442689020842088
-{}: 0.052514093254797965
-{}: 0.04006891808742999
-{}: 0.03847595685620219
-{}: 0.027389612457006902
-{}: 0.02494222375983643
-{}: 0.021297349425994174
-{}: 0.019044140119863516
-{}: 0.018149057886086586
-{}: 0.017771082630733282
-{}: 0.01776024043909285
-{}: 0.01776024043909285
-{}: 0.01746169680023116
-{}: 0.016836601366293294
-{}: 0.01674363710125257
-{}: 0.016586251226436675
-{}: 0.01599611862733107
-{}: 0.01570853332121752
-{}: 0.015623295449901046
-{}: 0.014474101355175264
-{}: 0.01437282431001415
-{}: 0.014272775839074794
-{}: 0.014052732848780357
-{}: 0.013905580860926341
-{}: 0.013622093409846027
-{}: 0.01308901090573367
-{}: 0.013012911336845888
-{}: 0.012587640937618402
-{}: 0.012246956297631792
-{}: 0.01216612820408287
-{}: 0.012129056980539664
-{}: 0.011516839340207032
-{}: 0.010909380304510573
-{}: 0.010777312802946342
-{}: 0.010705207231831401
-{}: 0.010305842869325307
-{}: 0.010190193198435041
-{}: 0.010164407196886533
-{}: 0.010150844605521807
-{}: 0.01004492109197747
-{}: 0.010024672671418754
-{}: 0.009930415617516985
-{}: 0.00982711209255999
-{}: 0.009818569138026206
-{}: 0.009727303659901237
-{}: 0.009425509310494377
-{}: 0.00871742161678352
-{}: 0.008652282754761334
-{}: 0.008554618665676125
-{}: 0.008544801553243598
-{}: 0.008037754225540863
-{}: 0.007853979258118657
-{}: 0.007739947285145832
-{}: 0.007712068579500325
-{}: 0.007606802437132065
-{}: 0.007598297298712861
-{}: 0.007505106293915029
-{}: 0.0072760251361956045
-{}: 0.0068691031556258565
-{}: 0.00685046833813153
-{}: 0.006826823500009436
-{}: 0.006825021064873673
-{}: 0.006719183085546014
-{}: 0.006533213708370679
-{}: 0.006514953226906489
-{}: 0.006510062544980693
-{}: 0.006425446961139391
-{}: 0.006312302506012899
-{}: 0.006279703613296915
-{}: 0.0061922790162401015
-{}: 0.0060508151032517945
-{}: 0.005924382720461314
-{}: 0.005828467944852536
-{}: 0.005708786326344637
-{}: 0.005696534368829065
-{}: 0.005365314506630349
-{}: 0.005325998226335502
-{}: 0.005174503082644539
-{}: 0.005140253728696475
-{}: 0.00478043513473151
-{}: 0.004655505677555019
-{}: 0.004566507151044935
-{}: 0.004562374336235052
-{}: 0.004546109293657084
-{}: 0.004531179162418215
-{}: 0.004520856072558133
-{}: 0.0044904744173975076
-{}: 0.004490061338115534
-{}: 0.003930950125781541
-{}: 0.00378670715769211
-{}: 0.0037436887744259056
-{}: 0.0036234658532301816
-{}: 0.003432439582382572
-{}: 0.003114832318823141
-{}: 0.0024817932400921145
-{}: 0.002309292216640909
-{}: 0.0018770741170024347
-{}: 0.0017905791067519305
-{}: 0.0014027338902250885
-{}: 0.0010602356517706037
-{}: 0.0008544801553243598
-{'name': 'Burundi'}: 0
-{'name': 'Belgium'}: 0
-{'name': 'Democratic Republic of the Congo'}: 0
-{'name': 'France*'}: 0
-{'name': 'Kenya'}: 0
-{'name': 'Rwanda'}: 0
-{'name': 'Uganda'}: 0
+{'name': 'Uzbekistan'}: 0.06442689020842088
+{'name': 'Kazakhstan'}: 0.052514093254797965
+{'name': 'Belarus'}: 0.040068918087429996
+{'name': 'Oman'}: 0.0384759568562022
+{'name': 'Jamaica'}: 0.027389612457006902
+{'name': 'North Macedonia'}: 0.024942223759836426
+{'name': 'Ecuador'}: 0.021297349425994178
+{'name': 'Colombia'}: 0.019044140119863513
+{'name': 'Bahrain'}: 0.018149057886086586
+{'name': 'Iran (Islamic Republic of)'}: 0.017771082630733286
+{'name': 'Azerbaijan*'}: 0.017760240439092852
+{'name': 'Armenia'}: 0.01776024043909285
+{'name': 'New Zealand*'}: 0.01746169680023116
+{'name': 'Bulgaria'}: 0.016836601366293294
+{'name': 'Ireland'}: 0.01674363710125257
+{'name': 'Switzerland'}: 0.016586251226436678
+{'name': "Lao People's Democratic Republic"}: 0.01599611862733107
+{'name': 'Dominican Republic'}: 0.01570853332121752
+{'name': 'Nepal'}: 0.015623295449901046
+{'name': 'Hungary'}: 0.014474101355175262
+{'name': 'Croatia'}: 0.01437282431001415
+{'name': 'Mozambique'}: 0.014272775839074794
+{'name': 'Republic of Korea'}: 0.014052732848780357
+{'name': 'Cambodia'}: 0.013905580860926341
+{'name': 'Ukraine*'}: 0.01362209340984603
+{'name': 'Cuba'}: 0.01308901090573367
+{'name': 'Tunisia'}: 0.013012911336845888
+{'name': 'Republic of Moldova*'}: 0.012587640937618402
+{'name': 'Morocco'}: 0.012246956297631792
+{'name': 'Japan'}: 0.012166128204082869
+{'name': '"   China Hong Kong SAR*"'}: 0.012129056980539664
+{'name': 'Serbia*'}: 0.011516839340207035
+{'name': 'Viet Nam'}: 0.010909380304510573
+{'name': 'Myanmar'}: 0.010777312802946342
+{'name': 'Haiti'}: 0.010705207231831401
+{'name': 'Romania'}: 0.010305842869325307
+{'name': 'Poland'}: 0.01019019319843504
+{'name': 'Peru'}: 0.010164407196886532
+{'name': 'Syrian Arab Republic'}: 0.010150844605521807
+{'name': 'State of Palestine*'}: 0.010044921091977469
+{'name': 'Pakistan'}: 0.010024672671418754
+{'name': 'India'}: 0.009930415617516985
+{'name': 'Afghanistan'}: 0.00982711209255999
+{'name': 'Jordan'}: 0.009818569138026208
+{'name': 'Austria'}: 0.009727303659901237
+{'name': 'Venezuela (Bolivarian Republic of)'}: 0.009425509310494377
+{'name': 'Benin'}: 0.008717421616783521
+{'name': 'Turkey'}: 0.008652282754761336
+{'name': 'Iraq'}: 0.008554618665676125
+{'name': 'Rwanda'}: 0.008544801553243598
+{'name': 'Canada'}: 0.008037754225540863
+{'name': 'Bangladesh'}: 0.007853979258118657
+{'name': 'Singapore'}: 0.007739947285145832
+{'name': 'Czechia'}: 0.007712068579500325
+{'name': 'Bolivia (Plurinational State of)'}: 0.007606802437132065
+{'name': 'Russian Federation'}: 0.007598297298712861
+{'name': 'China*'}: 0.007505106293915027
+{'name': 'Kuwait'}: 0.007276025136195606
+{'name': 'Qatar'}: 0.0068691031556258565
+{'name': 'Israel'}: 0.006850468338131531
+{'name': 'Greece'}: 0.006826823500009436
+{'name': 'Portugal'}: 0.006825021064873675
+{'name': 'Chile'}: 0.006719183085546013
+{'name': 'Thailand'}: 0.006533213708370679
+{'name': 'Lebanon'}: 0.006514953226906489
+{'name': 'South Africa'}: 0.006510062544980693
+{'name': 'Australia*'}: 0.006425446961139392
+{'name': 'Niger'}: 0.006312302506012899
+{'name': 'Sri Lanka'}: 0.006279703613296915
+{'name': 'United Arab Emirates'}: 0.0061922790162401
+{'name': 'Kenya'}: 0.0060508151032517945
+{'name': 'Bosnia and Herzegovina'}: 0.005924382720461315
+{'name': 'Belgium'}: 0.005828467944852535
+{'name': 'Sweden'}: 0.005708786326344637
+{'name': 'Burundi'}: 0.005696534368829065
+{'name': 'Brazil'}: 0.00536531450663035
+{'name': 'Togo'}: 0.005325998226335502
+{'name': 'Philippines'}: 0.005174503082644539
+{'name': 'Malaysia*'}: 0.005140253728696476
+{'name': 'Ghana'}: 0.00478043513473151
+{'name': 'Uganda'}: 0.004655505677555019
+{'name': 'Saudi Arabia'}: 0.004566507151044934
+{'name': 'Zimbabwe'}: 0.004562374336235052
+{'name': 'Senegal'}: 0.004546109293657084
+{'name': 'Spain*'}: 0.004531179162418214
+{'name': 'France*'}: 0.004520856072558133
+{'name': 'Netherlands*'}: 0.004490474417397508
+{'name': 'United Kingdom*'}: 0.004490061338115534
+{'name': 'Argentina'}: 0.003930950125781541
+{'name': 'Italy'}: 0.003786707157692109
+{'name': 'Indonesia'}: 0.0037436887744259056
+{'name': 'Germany'}: 0.003623465853230182
+{'name': 'Other'}: 0.003432439582382573
+{'name': 'Somalia'}: 0.0031148323188231416
+{'name': 'Egypt'}: 0.002481793240092115
+{'name': 'Nigeria'}: 0.002309292216640909
+{'name': 'United States of America*'}: 0.001877074117002435
+{'name': 'South Sudan'}: 0.0017905791067519305
+{'name': 'Mali'}: 0.0014027338902250887
+{'name': 'Ethiopia'}: 0.0010602356517706037
+{'name': 'Democratic Republic of the Congo'}: 0.0008544801553243598
 {'name': 'United Republic of Tanzania*'}: 0
-{'name': 'Other'}: 0
 {'name': 'Comoros'}: 0
 {'name': 'Madagascar'}: 0
 {'name': 'Réunion*'}: 0
 {'name': 'Djibouti'}: 0
-{'name': 'Ethiopia'}: 0
-{'name': 'Somalia'}: 0
 {'name': 'Yemen'}: 0
 {'name': 'Eritrea'}: 0
 {'name': 'Angola'}: 0
-{'name': 'China*'}: 0
-{'name': 'India'}: 0
 {'name': 'Malawi'}: 0
-{'name': 'Mozambique'}: 0
-{'name': 'South Africa'}: 0
-{'name': 'Zimbabwe'}: 0
-{'name': 'South Sudan'}: 0
 {'name': 'Sudan'}: 0
-{'name': 'United Kingdom*'}: 0
 {'name': 'Zambia'}: 0
-{}: 0
 {'name': 'Namibia'}: 0
 {'name': 'Congo'}: 0
 {'name': 'Mauritius*'}: 0
-{'name': 'Bangladesh'}: 0
-{'name': 'Canada'}: 0
-{'name': 'Sri Lanka'}: 0
-{'name': 'Germany'}: 0
-{'name': '"   China Hong Kong SAR*"'}: 0
-{'name': 'Ireland'}: 0
-{'name': 'Italy'}: 0
-{'name': 'Japan'}: 0
-{'name': 'Malaysia*'}: 0
-{'name': 'Pakistan'}: 0
-{'name': 'Russian Federation'}: 0
 {'name': 'Seychelles'}: 0
-{'name': 'Spain*'}: 0
-{'name': 'Switzerland'}: 0
-{'name': 'United States of America*'}: 0
 {'name': 'Mayotte*'}: 0
 {'name': 'Cabo Verde'}: 0
 {'name': 'Lesotho'}: 0
-{'name': 'Nigeria'}: 0
-{'name': 'Portugal'}: 0
-{'name': 'Australia*'}: 0
-{'name': 'Cuba'}: 0
-{'name': 'Indonesia'}: 0
 {'name': 'Maldives'}: 0
-{'name': 'Nepal'}: 0
-{'name': 'Philippines'}: 0
-{'name': 'Thailand'}: 0
 {'name': 'Central African Republic'}: 0
 {'name': 'Chad'}: 0
-{'name': 'Egypt'}: 0
 {'name': 'Libya'}: 0
-{'name': 'Mali'}: 0
-{}: 0
 {'name': 'Denmark*'}: 0
-{'name': 'Greece'}: 0
-{'name': 'Hungary'}: 0
 {'name': "Côte d'Ivoire"}: 0
 {'name': "Dem. People's Republic of Korea"}: 0
-{'name': 'Republic of Korea'}: 0
-{'name': 'Netherlands*'}: 0
 {'name': 'Norway*'}: 0
-{'name': 'Sweden'}: 0
-{'name': 'Togo'}: 0
 {'name': 'Botswana'}: 0
-{}: 0
 {'name': 'Eswatini'}: 0
 {'name': 'Cameroon'}: 0
-{'name': 'Ghana'}: 0
-{'name': 'Senegal'}: 0
-{}: 0
 {'name': 'Guinea'}: 0
 {'name': 'Sao Tome and Principe'}: 0
-{}: 0
-{}: 0
-{}: 0
-{'name': 'Benin'}: 0
 {'name': 'Equatorial Guinea'}: 0
 {'name': 'Gabon'}: 0
 {'name': 'Liberia'}: 0
-{'name': 'Niger'}: 0
-{'name': 'Austria'}: 0
 {'name': 'Cyprus*'}: 0
 {'name': 'Slovenia'}: 0
-{'name': 'Turkey'}: 0
-{}: 0
-{}: 0
-{'name': 'Lebanon'}: 0
 {'name': 'Mauritania'}: 0
-{}: 0
 {'name': 'Algeria'}: 0
-{'name': 'Israel'}: 0
-{'name': 'Morocco'}: 0
-{'name': 'Syrian Arab Republic'}: 0
-{'name': 'Tunisia'}: 0
 {'name': 'Burkina Faso'}: 0
-{'name': 'State of Palestine*'}: 0
-{'name': 'Iraq'}: 0
-{'name': 'Jordan'}: 0
-{'name': 'Kuwait'}: 0
-{'name': 'Saudi Arabia'}: 0
 {'name': 'Western Sahara'}: 0
-{}: 0
-{}: 0
-{'name': 'Afghanistan'}: 0
 {'name': 'Albania'}: 0
 {'name': 'Antigua and Barbuda'}: 0
-{'name': 'Azerbaijan*'}: 0
-{'name': 'Argentina'}: 0
 {'name': 'Bahamas'}: 0
-{'name': 'Bahrain'}: 0
-{'name': 'Armenia'}: 0
-{'name': 'Bosnia and Herzegovina'}: 0
-{'name': 'Brazil'}: 0
 {'name': 'Brunei Darussalam'}: 0
-{'name': 'Bulgaria'}: 0
-{'name': 'Myanmar'}: 0
-{'name': 'Belarus'}: 0
-{'name': 'Chile'}: 0
-{'name': 'Colombia'}: 0
-{'name': 'Croatia'}: 0
-{'name': 'Czechia'}: 0
-{'name': 'Ecuador'}: 0
 {'name': 'El Salvador'}: 0
 {'name': 'Estonia'}: 0
 {'name': 'Finland*'}: 0
 {'name': 'Gambia'}: 0
 {'name': 'Gibraltar*'}: 0
 {'name': 'Guatemala'}: 0
-{'name': 'Iran (Islamic Republic of)'}: 0
-{'name': 'Kazakhstan'}: 0
 {'name': 'Kyrgyzstan'}: 0
 {'name': 'Mexico'}: 0
 {'name': 'Monaco'}: 0
 {'name': 'Mongolia'}: 0
-{'name': 'Republic of Moldova*'}: 0
-{'name': 'Oman'}: 0
-{'name': 'New Zealand*'}: 0
-{'name': 'Poland'}: 0
 {'name': 'Guinea-Bissau'}: 0
-{'name': 'Qatar'}: 0
-{'name': 'Romania'}: 0
 {'name': 'Sierra Leone'}: 0
-{'name': 'Singapore'}: 0
 {'name': 'Slovakia'}: 0
 {'name': 'Tajikistan'}: 0
-{'name': 'United Arab Emirates'}: 0
 {'name': 'Turkmenistan'}: 0
-{'name': 'Ukraine*'}: 0
-{'name': 'North Macedonia'}: 0
-{'name': 'Uzbekistan'}: 0
-{'name': 'Venezuela (Bolivarian Republic of)'}: 0
-{}: 0
 {'name': 'Luxembourg'}: 0
 {'name': 'Barbados'}: 0
 {'name': 'Bermuda*'}: 0
-{'name': 'Bolivia (Plurinational State of)'}: 0
 {'name': 'British Virgin Islands*'}: 0
 {'name': 'Fiji'}: 0
 {'name': 'Guyana'}: 0
 {'name': 'Iceland'}: 0
-{'name': 'Jamaica'}: 0
-{'name': "Lao People's Democratic Republic"}: 0
 {'name': 'Latvia'}: 0
-{}: 0
 {'name': 'Lithuania'}: 0
 {'name': 'Malta'}: 0
 {'name': 'Nauru'}: 0
@@ -284,27 +175,18 @@
 {'name': 'Panama'}: 0
 {'name': 'Papua New Guinea'}: 0
 {'name': 'Paraguay'}: 0
-{'name': 'Peru'}: 0
 {'name': 'Saint Helena*'}: 0
 {'name': 'Saint Kitts and Nevis'}: 0
-{'name': 'Serbia*'}: 0
 {'name': 'Trinidad and Tobago'}: 0
 {'name': 'Uruguay'}: 0
-{'name': 'Viet Nam'}: 0
-{}: 0
-{}: 0
 {'name': 'Timor-Leste'}: 0
 {'name': 'United States Virgin Islands*'}: 0
-{}: 0
-{}: 0
 {'name': 'Andorra'}: 0
 {'name': 'Bhutan'}: 0
 {'name': 'Solomon Islands'}: 0
-{'name': 'Cambodia'}: 0
 {'name': 'Costa Rica'}: 0
 {'name': 'Dominica'}: 0
 {'name': 'Kiribati'}: 0
-{'name': 'Haiti'}: 0
 {'name': 'Honduras'}: 0
 {'name': 'Liechtenstein'}: 0
 {'name': 'Micronesia (Fed. States of)'}: 0
@@ -318,18 +200,12 @@
 {'name': 'Grenada'}: 0
 {'name': 'Guadeloupe*'}: 0
 {'name': 'Turks and Caicos Islands*'}: 0
-{}: 0
 {'name': 'Georgia*'}: 0
-{}: 0
-{}: 0
 {'name': '"   China Macao SAR*"'}: 0
-{}: 0
 {'name': 'Guam*'}: 0
 {'name': 'Aruba*'}: 0
 {'name': 'Puerto Rico*'}: 0
 {'name': 'Suriname'}: 0
-{'name': 'Dominican Republic'}: 0
-{}: 0
 {'name': 'Anguilla*'}: 0
 {'name': 'Cayman Islands*'}: 0
 {'name': 'Greenland*'}: 0
@@ -339,44 +215,19 @@
 {'name': 'Vanuatu'}: 0
 {'name': 'Belize'}: 0
 {'name': 'Saint Lucia'}: 0
-{}: 0
 {'name': 'Falkland Islands (Malvinas)*'}: 0
 {'name': 'New Caledonia*'}: 0
 {'name': 'Faroe Islands*'}: 0
 {'name': 'Tuvalu'}: 0
 {'name': 'Wallis and Futuna Islands*'}: 0
-{}: 0
-{}: 0
 {'name': 'Holy See*'}: 0
 {'name': 'Channel Islands*'}: 0
-{}: 0
-{}: 0
 {'name': 'Montserrat*'}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
 {'name': '"   Bonaire Sint Eustatius and Saba*"'}: 0
 {'name': 'Cook Islands*'}: 0
-{}: 0
 {'name': 'Curaçao*'}: 0
 {'name': 'Sint Maarten (Dutch part)*'}: 0
-{}: 0
 {'name': 'French Guiana*'}: 0
 {'name': 'Martinique*'}: 0
 {'name': 'Saint Pierre and Miquelon*'}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
-{}: 0
 {'name': 'Tokelau*'}: 0

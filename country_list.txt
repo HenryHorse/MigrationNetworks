@@ -225,6 +225,3 @@ Saint Pierre and Miquelon*,46.941936,-56.27111
 Tokelau*,-8.967363,-171.855881
 Wallis and Futuna Islands*,-13.768752,-177.156097
 Micronesia (Fed. States of),7.425554,150.550812
-
-
-

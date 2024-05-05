@@ -13,6 +13,7 @@ regions you don't want to include, exclude the element
 import networkx as nx
 import matplotlib.pyplot as plt
 import sys
+from mpl_toolkits.basemap import Basemap
 
 MIN_EDGE_WEIGHT = 100000
 BIN_SIZE = 5
@@ -79,7 +80,9 @@ for line in countries_list:
         G.add_node(origin_code, name=origin_name)
 
         if (num_migrants > MIN_EDGE_WEIGHT):
-            G.add_edge(origin_name, dest_name, weight=num_migrants)
+            G.add_edge(origin_code, dest_code, weight=num_migrants)
+
+
 
 
 # BETWEENNESS CENTRALITY
@@ -140,6 +143,47 @@ plt.tight_layout()  # Adjusts subplots to fit into figure area.
 plt.show()
 
 
+countries = {}
+with open("country_list.txt", "r") as file:
+    for line in file:
+        parts = line.strip().split(",")
+        country_name = parts[0]
+        lat = float(parts[1])
+        lon = float(parts[2])
+        countries[country_name] = (lat, lon)
+
+plt.figure(figsize=(14, 8))  # Set the size of the map
+m = Basemap(projection='merc', llcrnrlat=-60, urcrnrlat=70, llcrnrlon=-180, urcrnrlon=180, lat_ts=20, resolution='c')
+m.drawcoastlines()
+m.drawcountries()
+
+
+pos = {}
+removed_nodes = []
+for node in G.nodes(data=True):
+    country = node[1]['name']
+    if country in countries:
+        lat, lon = countries[country]
+        pos[node[0]] = m(lon, lat)  # Map projection coordinates
+    else:
+        print(f"Warning: No coordinates found for {country}")
+        removed_nodes.append(node[0])
+
+
+for node in removed_nodes:
+    G.remove_node(node)
+
+# Draw nodes with geographical positions
+nx.draw_networkx_nodes(G, pos, node_size=20, node_color='blue', alpha=0.6, ax=plt.gca())
+
+# Draw edges with geographical positions
+edge_widths = [0.0000005 * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
+nx.draw_networkx_edges(G, pos, width=edge_widths, alpha=0.5, edge_color='black')
+
+
+plt.title('Global Migration Network')
+plt.show()
+
 # Choose a layout that provides better spacing, and adjust parameters if necessary
 pos = nx.spring_layout(G, scale=20)  # You can increase the scale to spread out nodes
 plt.figure(figsize=(15, 15))  # Large figure size to accommodate the graph
@@ -147,7 +191,7 @@ plt.figure(figsize=(15, 15))  # Large figure size to accommodate the graph
 node_size = max(100, 7000 / len(G.nodes()))  # Avoid too large node sizes for large graphs
 nx.draw_networkx_nodes(G, pos, node_size=node_size, node_color='skyblue', alpha=0.6)
 # Edges
-edge_widths = [0.005 * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
+edge_widths = [0.0000005 * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
 nx.draw_networkx_edges(G, pos, width=edge_widths, alpha=0.5, edge_color='black')
 # Labels
 font_size = max(8, 100 / len(G.nodes())**0.5)  # Smaller font size for larger graphs
