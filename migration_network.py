@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('TkAgg')
 import networkx as nx
 import matplotlib.pyplot as plt
 import sys
@@ -165,9 +167,24 @@ for node in removed_nodes:
 # Draw nodes with geographical positions
 nx.draw_networkx_nodes(G, pos, node_size=20, node_color='blue', alpha=0.6, ax=plt.gca())
 
+
 # Draw edges with geographical positions
-edge_widths = [0.0000005 * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
-nx.draw_networkx_edges(G, pos, width=edge_widths, alpha=0.5, edge_color='black')
+for c1, c2, cdata in G.edges(data=True):
+    origin_name = G.nodes[c1]['name']
+    dest_name = G.nodes[c2]['name']
+    edge_widths = [0.0000005 * G[c1][c2]['weight']]
+    edge_color = 'black'  # Default color for no democracy index data
+
+    origin_dem = next((float(country[politics_index].strip()) for country in politics if country[0].strip() == origin_name), -1)
+    dest_dem = next((float(country[politics_index].strip()) for country in politics if country[0].strip() == dest_name), -1)
+
+    if origin_dem != -1 and dest_dem != -1:
+        if dest_dem > origin_dem:
+            edge_color = 'blue'
+        elif dest_dem < origin_dem:
+            edge_color = 'red'
+
+    nx.draw_networkx_edges(G, pos, edgelist=[(c1, c2)], edge_color=edge_color, width=edge_widths)
 
 # Show map
 plt.title('Global Migration Network')

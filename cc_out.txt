@@ -1,6 +1,6 @@
 {'name': 'Uzbekistan'}: 0.06442689020842088
 {'name': 'Kazakhstan'}: 0.052514093254797965
-{'name': 'Belarus'}: 0.040068918087429996
+{'name': 'Belarus'}: 0.04006891808742999
 {'name': 'Oman'}: 0.0384759568562022
 {'name': 'Jamaica'}: 0.027389612457006902
 {'name': 'North Macedonia'}: 0.024942223759836426
@@ -16,58 +16,58 @@
 {'name': 'Switzerland'}: 0.016586251226436678
 {'name': "Lao People's Democratic Republic"}: 0.01599611862733107
 {'name': 'Dominican Republic'}: 0.01570853332121752
-{'name': 'Nepal'}: 0.015623295449901046
+{'name': 'Nepal'}: 0.015623295449901048
 {'name': 'Hungary'}: 0.014474101355175262
 {'name': 'Croatia'}: 0.01437282431001415
 {'name': 'Mozambique'}: 0.014272775839074794
 {'name': 'Republic of Korea'}: 0.014052732848780357
 {'name': 'Cambodia'}: 0.013905580860926341
-{'name': 'Ukraine*'}: 0.01362209340984603
+{'name': 'Ukraine*'}: 0.013622093409846029
 {'name': 'Cuba'}: 0.01308901090573367
 {'name': 'Tunisia'}: 0.013012911336845888
 {'name': 'Republic of Moldova*'}: 0.012587640937618402
 {'name': 'Morocco'}: 0.012246956297631792
 {'name': 'Japan'}: 0.012166128204082869
-{'name': '"   China Hong Kong SAR*"'}: 0.012129056980539664
+{'name': '"   China Hong Kong SAR*"'}: 0.012129056980539663
 {'name': 'Serbia*'}: 0.011516839340207035
 {'name': 'Viet Nam'}: 0.010909380304510573
 {'name': 'Myanmar'}: 0.010777312802946342
 {'name': 'Haiti'}: 0.010705207231831401
 {'name': 'Romania'}: 0.010305842869325307
-{'name': 'Poland'}: 0.01019019319843504
-{'name': 'Peru'}: 0.010164407196886532
-{'name': 'Syrian Arab Republic'}: 0.010150844605521807
+{'name': 'Poland'}: 0.010190193198435045
+{'name': 'Peru'}: 0.010164407196886533
+{'name': 'Syrian Arab Republic'}: 0.010150844605521804
 {'name': 'State of Palestine*'}: 0.010044921091977469
-{'name': 'Pakistan'}: 0.010024672671418754
-{'name': 'India'}: 0.009930415617516985
-{'name': 'Afghanistan'}: 0.00982711209255999
+{'name': 'Pakistan'}: 0.010024672671418749
+{'name': 'India'}: 0.00993041561751699
+{'name': 'Afghanistan'}: 0.009827112092559988
 {'name': 'Jordan'}: 0.009818569138026208
 {'name': 'Austria'}: 0.009727303659901237
 {'name': 'Venezuela (Bolivarian Republic of)'}: 0.009425509310494377
 {'name': 'Benin'}: 0.008717421616783521
-{'name': 'Turkey'}: 0.008652282754761336
+{'name': 'Turkey'}: 0.008652282754761334
 {'name': 'Iraq'}: 0.008554618665676125
 {'name': 'Rwanda'}: 0.008544801553243598
 {'name': 'Canada'}: 0.008037754225540863
-{'name': 'Bangladesh'}: 0.007853979258118657
+{'name': 'Bangladesh'}: 0.007853979258118659
 {'name': 'Singapore'}: 0.007739947285145832
 {'name': 'Czechia'}: 0.007712068579500325
 {'name': 'Bolivia (Plurinational State of)'}: 0.007606802437132065
 {'name': 'Russian Federation'}: 0.007598297298712861
-{'name': 'China*'}: 0.007505106293915027
+{'name': 'China*'}: 0.007505106293915029
 {'name': 'Kuwait'}: 0.007276025136195606
 {'name': 'Qatar'}: 0.0068691031556258565
 {'name': 'Israel'}: 0.006850468338131531
 {'name': 'Greece'}: 0.006826823500009436
-{'name': 'Portugal'}: 0.006825021064873675
-{'name': 'Chile'}: 0.006719183085546013
+{'name': 'Portugal'}: 0.006825021064873674
+{'name': 'Chile'}: 0.006719183085546014
 {'name': 'Thailand'}: 0.006533213708370679
 {'name': 'Lebanon'}: 0.006514953226906489
 {'name': 'South Africa'}: 0.006510062544980693
-{'name': 'Australia*'}: 0.006425446961139392
+{'name': 'Australia*'}: 0.0064254469611393925
 {'name': 'Niger'}: 0.006312302506012899
 {'name': 'Sri Lanka'}: 0.006279703613296915
-{'name': 'United Arab Emirates'}: 0.0061922790162401
+{'name': 'United Arab Emirates'}: 0.006192279016240101
 {'name': 'Kenya'}: 0.0060508151032517945
 {'name': 'Bosnia and Herzegovina'}: 0.005924382720461315
 {'name': 'Belgium'}: 0.005828467944852535
@@ -75,28 +75,28 @@
 {'name': 'Burundi'}: 0.005696534368829065
 {'name': 'Brazil'}: 0.00536531450663035
 {'name': 'Togo'}: 0.005325998226335502
-{'name': 'Philippines'}: 0.005174503082644539
-{'name': 'Malaysia*'}: 0.005140253728696476
+{'name': 'Philippines'}: 0.005174503082644538
+{'name': 'Malaysia*'}: 0.0051402537286964756
 {'name': 'Ghana'}: 0.00478043513473151
 {'name': 'Uganda'}: 0.004655505677555019
-{'name': 'Saudi Arabia'}: 0.004566507151044934
+{'name': 'Saudi Arabia'}: 0.004566507151044935
 {'name': 'Zimbabwe'}: 0.004562374336235052
 {'name': 'Senegal'}: 0.004546109293657084
-{'name': 'Spain*'}: 0.004531179162418214
+{'name': 'Spain*'}: 0.004531179162418217
 {'name': 'France*'}: 0.004520856072558133
 {'name': 'Netherlands*'}: 0.004490474417397508
-{'name': 'United Kingdom*'}: 0.004490061338115534
-{'name': 'Argentina'}: 0.003930950125781541
-{'name': 'Italy'}: 0.003786707157692109
+{'name': 'United Kingdom*'}: 0.004490061338115533
+{'name': 'Argentina'}: 0.003930950125781542
+{'name': 'Italy'}: 0.0037867071576921088
 {'name': 'Indonesia'}: 0.0037436887744259056
-{'name': 'Germany'}: 0.003623465853230182
-{'name': 'Other'}: 0.003432439582382573
+{'name': 'Germany'}: 0.0036234658532301816
+{'name': 'Other'}: 0.0034324395823825725
 {'name': 'Somalia'}: 0.0031148323188231416
 {'name': 'Egypt'}: 0.002481793240092115
 {'name': 'Nigeria'}: 0.002309292216640909
 {'name': 'United States of America*'}: 0.001877074117002435
 {'name': 'South Sudan'}: 0.0017905791067519305
-{'name': 'Mali'}: 0.0014027338902250887
+{'name': 'Mali'}: 0.0014027338902250885
 {'name': 'Ethiopia'}: 0.0010602356517706037
 {'name': 'Democratic Republic of the Congo'}: 0.0008544801553243598
 {'name': 'United Republic of Tanzania*'}: 0
