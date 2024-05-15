@@ -46,91 +46,10 @@ def main():
     print(average_clustering_directed)
 
     # DEGREE DISTRIBUTION (in, out, total)
-    in_degrees = dict(G.in_degree())  # Returns a dictionary with node:in-degree pairs
-    out_degrees = dict(G.out_degree())  # Returns a dictionary with node:out-degree pairs
-    total_degrees = dict(G.degree())  # Returns a dictionary with node:total-degree (in + out) pairs
-    in_degree_values = list(in_degrees.values())
-    out_degree_values = list(out_degrees.values())
-    total_degree_values = list(total_degrees.values())
-
-    # Set up the plot with subplots
-    plt.figure(figsize=(14, 6))  # Wider figure to accommodate two subplots
-
-    # Plot in-degree distribution
-    plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st subplot
-    plt.hist(in_degree_values, bins=range(0, max(in_degree_values) + 2, BIN_SIZE), color='green', alpha=0.7, edgecolor='black')
-    plt.title('In-Degree Distribution')
-    plt.xlabel('In-Degree')
-    plt.ylabel('Frequency')
-    plt.grid(True, which='both', linestyle='--', linewidth=0.5)
-
-    # Plot out-degree distribution
-    plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd subplot
-    plt.hist(out_degree_values, bins=range(0, max(out_degree_values) + 2, BIN_SIZE), color='red', alpha=0.7, edgecolor='black')
-    plt.title('Out-Degree Distribution')
-    plt.xlabel('Out-Degree')
-    plt.ylabel('Frequency')
-    plt.grid(True, which='both', linestyle='--', linewidth=0.5)
-
-    # Show plot
-    plt.tight_layout()  # Adjusts subplots to fit into figure area.
-    plt.show()
+    degree_distribution(G)
 
     # Get latitudes and longitudes
-    countries = {}
-    with open("country_list.txt", "r") as file:
-        for line in file:
-            parts = line.strip().split(",")
-            country_name = parts[0]
-            lat = float(parts[1])
-            lon = float(parts[2])
-            countries[country_name] = (lat, lon)
-
-    # Draw map
-    plt.figure(figsize=(14, 8))  # Set the size of the map
-    m = Basemap(projection='merc', llcrnrlat=-60, urcrnrlat=70, llcrnrlon=-180, urcrnrlon=180, lat_ts=20, resolution='c')
-    m.drawcoastlines()
-    m.drawcountries()
-
-    # Remove certain nodes
-    pos = {}
-    removed_nodes = []
-    for node in G.nodes(data=True):
-        country = node[1]['name']
-        if country in countries:
-            lat, lon = countries[country]
-            pos[node[0]] = m(lon, lat)  # Map projection coordinates
-        else:
-            print(f"Warning: No coordinates found for {country}")
-            removed_nodes.append(node[0])
-    for node in removed_nodes:
-        G.remove_node(node)
-
-    # Draw nodes with geographical positions
-    nx.draw_networkx_nodes(G, pos, node_size=20, node_color='blue', alpha=0.6, ax=plt.gca())
-
-
-    # Draw edges with geographical positions
-    for c1, c2, cdata in G.edges(data=True):
-        origin_name = G.nodes[c1]['name']
-        dest_name = G.nodes[c2]['name']
-        edge_widths = [0.0000005 * G[c1][c2]['weight']]
-        edge_color = 'black'  # Default color for no democracy index data
-
-        origin_dem = G.nodes[c1]['dem_index']
-        dest_dem = G.nodes[c2]['dem_index']
-
-        if origin_dem != -1 and dest_dem != -1:
-            if dest_dem > origin_dem:
-                edge_color = 'blue'
-            elif dest_dem < origin_dem:
-                edge_color = 'red'
-
-        nx.draw_networkx_edges(G, pos, edgelist=[(c1, c2)], edge_color=edge_color, width=edge_widths)
-
-    # Show map
-    plt.title('Global Migration Network')
-    plt.show()
+    draw_map(G)
 
     # Choose a layout that provides better spacing, and adjust parameters if necessary
     pos = nx.spring_layout(G, scale=20)  # You can increase the scale to spread out nodes
@@ -266,6 +185,92 @@ def clustering_coefficient(G):
     with open("cc_out.txt", "w") as file:
         for node, clustering in sorted_clustering:
             file.write(f"{G.nodes[node]}: {clustering}\n")
+
+def degree_distribution(G):
+    in_degrees = dict(G.in_degree())  # Returns a dictionary with node:in-degree pairs
+    out_degrees = dict(G.out_degree())  # Returns a dictionary with node:out-degree pairs
+    total_degrees = dict(G.degree())  # Returns a dictionary with node:total-degree (in + out) pairs
+    in_degree_values = list(in_degrees.values())
+    out_degree_values = list(out_degrees.values())
+    total_degree_values = list(total_degrees.values())
+
+    # Set up the plot with subplots
+    plt.figure(figsize=(14, 6))  # Wider figure to accommodate two subplots
+
+    # Plot in-degree distribution
+    plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st subplot
+    plt.hist(in_degree_values, bins=range(0, max(in_degree_values) + 2, BIN_SIZE), color='green', alpha=0.7, edgecolor='black')
+    plt.title('In-Degree Distribution')
+    plt.xlabel('In-Degree')
+    plt.ylabel('Frequency')
+    plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+    # Plot out-degree distribution
+    plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd subplot
+    plt.hist(out_degree_values, bins=range(0, max(out_degree_values) + 2, BIN_SIZE), color='red', alpha=0.7, edgecolor='black')
+    plt.title('Out-Degree Distribution')
+    plt.xlabel('Out-Degree')
+    plt.ylabel('Frequency')
+    plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+    # Show plot
+    plt.tight_layout()  # Adjusts subplots to fit into figure area.
+    plt.show()
+
+def draw_map(G):
+    countries = {}
+    with open("country_list.txt", "r") as file:
+        for line in file:
+            parts = line.strip().split(",")
+            country_name = parts[0]
+            lat = float(parts[1])
+            lon = float(parts[2])
+            countries[country_name] = (lat, lon)
+    
+    # Draw map
+    plt.figure(figsize=(14, 8))  # Set the size of the map
+    m = Basemap(projection='merc', llcrnrlat=-60, urcrnrlat=70, llcrnrlon=-180, urcrnrlon=180, lat_ts=20, resolution='c')
+    m.drawcoastlines()
+    m.drawcountries()
+
+    # Remove certain nodes
+    pos = {}
+    removed_nodes = []
+    for node in G.nodes(data=True):
+        country = node[1]['name']
+        if country in countries:
+            lat, lon = countries[country]
+            pos[node[0]] = m(lon, lat)  # Map projection coordinates
+        else:
+            print(f"Warning: No coordinates found for {country}")
+            removed_nodes.append(node[0])
+    for node in removed_nodes:
+        G.remove_node(node)
+
+    # Draw nodes with geographical positions
+    nx.draw_networkx_nodes(G, pos, node_size=20, node_color='blue', alpha=0.6, ax=plt.gca())
+
+    # Draw edges with geographical positions
+    for c1, c2, cdata in G.edges(data=True):
+        origin_name = G.nodes[c1]['name']
+        dest_name = G.nodes[c2]['name']
+        edge_widths = [0.0000005 * G[c1][c2]['weight']]
+        edge_color = 'black'  # Default color for no democracy index data
+
+        origin_dem = G.nodes[c1]['dem_index']
+        dest_dem = G.nodes[c2]['dem_index']
+
+        if origin_dem != -1 and dest_dem != -1:
+            if dest_dem > origin_dem:
+                edge_color = 'blue'
+            elif dest_dem < origin_dem:
+                edge_color = 'red'
+
+        nx.draw_networkx_edges(G, pos, edgelist=[(c1, c2)], edge_color=edge_color, width=edge_widths)
+
+    # Show map
+    plt.title('Global Migration Network')
+    plt.show()
 
 if __name__ == '__main__':
    main()
