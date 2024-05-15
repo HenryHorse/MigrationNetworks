@@ -33,23 +33,12 @@ def main():
     # create graph and get data
     G = nx.DiGraph()
     data = get_data(G, countries_list, year_index, politics_index)
-
-    # create graph and array of data
     
-
     # BETWEENNESS CENTRALITY
-    betweenness = nx.betweenness_centrality(G)
-    sorted_betweenness = sorted(betweenness.items(), key=lambda item: item[1], reverse=True)
-    with open("bc_out.txt", "w") as file:
-        for node, bc in sorted_betweenness:
-            file.write(f"{G.nodes[node]}: {bc}\n")
+    betweenness_centrality(G)
 
     # CLUSTERING COEFFICIENT
-    clustering_directed = nx.clustering(G, weight='weight')
-    sorted_clustering = sorted(clustering_directed.items(), key=lambda item: item[1], reverse=True)
-    with open("cc_out.txt", "w") as file:
-        for node, clustering in sorted_clustering:
-            file.write(f"{G.nodes[node]}: {clustering}\n")
+    clustering_coefficient(G)
 
     # Compute the average clustering coefficient across the entire graph
     average_clustering_directed = nx.average_clustering(G, weight='weight')
@@ -262,6 +251,21 @@ def get_data(G, countries_list, year_index, politics_index):
             G.add_node(origin_code, name=origin_name, dem_index=origin_dem)
             if (num_migrants > MIN_EDGE_WEIGHT):
                 G.add_edge(origin_code, dest_code, weight=num_migrants)
-    
+    return data
+
+def betweenness_centrality(G):
+    betweenness = nx.betweenness_centrality(G)
+    sorted_betweenness = sorted(betweenness.items(), key=lambda item: item[1], reverse=True)
+    with open("bc_out.txt", "w") as file:
+        for node, bc in sorted_betweenness:
+            file.write(f"{G.nodes[node]}: {bc}\n")
+
+def clustering_coefficient(G):
+    clustering_directed = nx.clustering(G, weight='weight')
+    sorted_clustering = sorted(clustering_directed.items(), key=lambda item: item[1], reverse=True)
+    with open("cc_out.txt", "w") as file:
+        for node, clustering in sorted_clustering:
+            file.write(f"{G.nodes[node]}: {clustering}\n")
+
 if __name__ == '__main__':
    main()
