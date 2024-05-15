@@ -178,12 +178,12 @@ plt.show()
 # Get average change in democracy
 total_migrants = 0
 total_change = 0
+emigrated_dem_index = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+immigrated_dem_index = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 for line in countries_list:
     dest_name = line[1].strip()
-    #print(dest_name)
     dest_code = line[3].strip()
     origin_name = line[5].strip()
-    #print(origin_name)
     origin_code = line[6].strip()
     string_migrants = line[year_index].strip().replace(" ", "")
     if string_migrants != '..':
@@ -193,7 +193,6 @@ for line in countries_list:
         origin_dem = -1
         dest_dem = -1
         for country in politics:
-            #print(country[0])
             if country[0].strip() == origin_name:
                 origin_dem = float(country[politics_index].strip())
             elif country[0].strip() == dest_name:
@@ -202,6 +201,70 @@ for line in countries_list:
         if (origin_dem != -1 and dest_dem != -1):
             total_migrants += num_migrants
             total_change += num_migrants * (dest_dem - origin_dem)
-            #print(str(total_migrants) + " " + str(total_change))
+            if (dest_dem >= 9):
+                immigrated_dem_index[9] += total_migrants
+            elif (dest_dem >= 8):
+                immigrated_dem_index[8] += total_migrants
+            elif (dest_dem >= 7):
+                immigrated_dem_index[7] += total_migrants
+            elif (dest_dem >= 6):
+                immigrated_dem_index[6] += total_migrants
+            elif (dest_dem >= 5):
+                immigrated_dem_index[5] += total_migrants
+            elif (dest_dem >= 4):
+                immigrated_dem_index[4] += total_migrants
+            elif (dest_dem >= 3):
+                immigrated_dem_index[3] += total_migrants
+            elif (dest_dem >= 2):
+                immigrated_dem_index[2] += total_migrants
+            elif (dest_dem >= 1):
+                immigrated_dem_index[1] += total_migrants
+            elif (dest_dem >= 0):
+                immigrated_dem_index[0] += total_migrants
+
+            if (origin_dem >= 9):
+                emigrated_dem_index[9] += total_migrants
+            elif (origin_dem >= 8):
+                emigrated_dem_index[8] += total_migrants
+            elif (origin_dem >= 7):
+                emigrated_dem_index[7] += total_migrants
+            elif (origin_dem >= 6):
+                emigrated_dem_index[6] += total_migrants
+            elif (origin_dem >= 5):
+                emigrated_dem_index[5] += total_migrants
+            elif (origin_dem >= 4):
+                emigrated_dem_index[4] += total_migrants
+            elif (origin_dem >= 3):
+                emigrated_dem_index[3] += total_migrants
+            elif (origin_dem >= 2):
+                emigrated_dem_index[2] += total_migrants
+            elif (origin_dem >= 1):
+                emigrated_dem_index[1] += total_migrants
+            elif (origin_dem >= 0):
+                emigrated_dem_index[0] += total_migrants
 average_change = total_change / total_migrants
 print("Average change in democracy index: " + str(average_change))
+
+# "Is the a specific level of democracy people tend to migrate from or to?"
+# Set up the plot with subplots
+plt.figure(figsize=(14, 6))  # Wider figure to accommodate two subplots
+
+# Plot in-degree distribution
+plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st subplot
+plt.bar([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], emigrated_dem_index, color='green', alpha=0.7, edgecolor='black')
+plt.title('Democracy Index of countries emigrated from')
+plt.xlabel('Democracy Index')
+plt.ylabel('Emigrants')
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+# Plot out-degree distribution
+plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd subplot
+plt.bar([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], immigrated_dem_index, color='red', alpha=0.7, edgecolor='black')
+plt.title('Democracy Index of countries immigrated to')
+plt.xlabel('Democracy Index')
+plt.ylabel('Immigrants')
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+
+# Show plot
+plt.tight_layout()  # Adjusts subplots to fit into figure area.
+plt.show()
