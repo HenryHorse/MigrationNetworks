@@ -52,16 +52,31 @@ elif (year == "2020"):
     year_index = 13
     politics_index = 1
 
-# create graph
+# create graph and array of data
+data = [] # dataset containing all migration flows
 G = nx.DiGraph()
 for line in countries_list:
-    dest_name = line[1].strip()
-    dest_code = line[3].strip()
     origin_name = line[5].strip()
     origin_code = line[6].strip()
+    dest_name = line[1].strip()
+    dest_code = line[3].strip()
     string_migrants = line[year_index].strip().replace(" ", "")
     if string_migrants != '..':
         num_migrants = int(string_migrants)
+        origin_dem = -1
+        dest_dem = -1
+        for country in politics:
+            if country[0].strip() == origin_name:
+                origin_dem = float(country[politics_index].strip())
+            elif country[0].strip() == dest_name:
+                dest_dem = float(country[politics_index].strip())
+        data.append({"dest_name": dest_name,
+                     "dest_code": dest_code,
+                     "origin_name": origin_name,
+                     "origin_code": origin_code,
+                     "migrants": num_migrants,
+                     "origin_dem": origin_dem,
+                     "dest_dem": dest_dem})
         G.add_node(dest_code, name=dest_name)
         G.add_node(origin_code, name=origin_name)
         if (num_migrants > MIN_EDGE_WEIGHT):
@@ -180,68 +195,12 @@ total_migrants = 0
 total_change = 0
 emigrated_dem_index = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 immigrated_dem_index = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-for line in countries_list:
-    dest_name = line[1].strip()
-    dest_code = line[3].strip()
-    origin_name = line[5].strip()
-    origin_code = line[6].strip()
-    string_migrants = line[year_index].strip().replace(" ", "")
-    if string_migrants != '..':
-        num_migrants = int(string_migrants)
-
-        # find the difference in democracy index between the two countries
-        origin_dem = -1
-        dest_dem = -1
-        for country in politics:
-            if country[0].strip() == origin_name:
-                origin_dem = float(country[politics_index].strip())
-            elif country[0].strip() == dest_name:
-                dest_dem = float(country[politics_index].strip())
-        
-        if (origin_dem != -1 and dest_dem != -1):
-            total_migrants += num_migrants
-            total_change += num_migrants * (dest_dem - origin_dem)
-            if (dest_dem >= 9):
-                immigrated_dem_index[9] += total_migrants
-            elif (dest_dem >= 8):
-                immigrated_dem_index[8] += total_migrants
-            elif (dest_dem >= 7):
-                immigrated_dem_index[7] += total_migrants
-            elif (dest_dem >= 6):
-                immigrated_dem_index[6] += total_migrants
-            elif (dest_dem >= 5):
-                immigrated_dem_index[5] += total_migrants
-            elif (dest_dem >= 4):
-                immigrated_dem_index[4] += total_migrants
-            elif (dest_dem >= 3):
-                immigrated_dem_index[3] += total_migrants
-            elif (dest_dem >= 2):
-                immigrated_dem_index[2] += total_migrants
-            elif (dest_dem >= 1):
-                immigrated_dem_index[1] += total_migrants
-            elif (dest_dem >= 0):
-                immigrated_dem_index[0] += total_migrants
-
-            if (origin_dem >= 9):
-                emigrated_dem_index[9] += total_migrants
-            elif (origin_dem >= 8):
-                emigrated_dem_index[8] += total_migrants
-            elif (origin_dem >= 7):
-                emigrated_dem_index[7] += total_migrants
-            elif (origin_dem >= 6):
-                emigrated_dem_index[6] += total_migrants
-            elif (origin_dem >= 5):
-                emigrated_dem_index[5] += total_migrants
-            elif (origin_dem >= 4):
-                emigrated_dem_index[4] += total_migrants
-            elif (origin_dem >= 3):
-                emigrated_dem_index[3] += total_migrants
-            elif (origin_dem >= 2):
-                emigrated_dem_index[2] += total_migrants
-            elif (origin_dem >= 1):
-                emigrated_dem_index[1] += total_migrants
-            elif (origin_dem >= 0):
-                emigrated_dem_index[0] += total_migrants
+for element in data:        
+        if (element["origin_dem"] != -1 and element["dest_dem"] != -1):
+            total_migrants += element["migrants"]
+            total_change += element["migrants"] * (element["dest_dem"] - element["origin_dem"])
+            immigrated_dem_index[int(element["dest_dem"] // 1)] += total_migrants
+            emigrated_dem_index[int(element["origin_dem"] // 1)] += total_migrants
 average_change = total_change / total_migrants
 print("Average change in democracy index: " + str(average_change))
 
