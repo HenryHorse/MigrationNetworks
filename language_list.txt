@@ -1,0 +1,165 @@
+Afghanistan, Dari, Pashto
+Akrotiri, English
+Albania, Albanian
+Algeria, Arabic, French
+American Samoa, Samoan
+Andorra, Catalan, Castilian
+Angola, Portuguese
+Anguilla, English
+Antigua, English
+Argentina, Spanish
+Armenia, Armenian
+Aruba, Papiamento
+Australia, English
+Austria, Germany
+Azerbaijan, Azerbaijani
+Bahrain, Arabic
+Bangladesh, Bangala
+Barbados, English
+Belarus, Russian
+Belgium, Dutch, French
+Belize, English, Spanish
+Benin, French
+Bermuda, English
+Bhutan, Sharchopkha, Dzongkha
+Bolivia, Spanish
+Bosnia, Bosnian, Serbian
+Botswana, Setswana
+Brazil, Portuguese
+Bulgaria, Bulgarian
+Burma, Burmese
+Cambodia, Khmer
+Cameroon, French, English
+Canada, English, French
+Cayman Islands, English
+Chile, Spanish
+China, Mandarin
+Colombia, Spanish
+Comoros, Arabic, French
+Democratic Republic of Congo, French
+Costa Rica, Spanish
+Croatia, Croatian
+Cuba, Spanish
+Cyprus, Greek
+Czechia, Czechi
+Denmark, Danish, English
+Djibouti, French, Arabic
+Dominican Republic, Spanish
+Ecuador, Spanish
+Egypt, Arabic, English
+El Salvador, Spanish
+Fiji, English
+Finland, Finnish
+France, French
+Gabon, French
+Germany, German
+Greece, Greek
+Guam, English, Filipino
+Guatemala, Spanish
+Guinea, French
+Haiti, French, Creole
+Honduras, Spanish
+Hong Kong, Cantonese
+Hungary, Hungarian, English
+Iceland, Icelandic
+India, Hindi
+Indonesia, Indonesia
+Iran, Persian
+Iraq, Arabic
+Ireland, English
+Israel, Hebrew
+Italy, Italian
+Jamaica, English
+Japan, Japanese
+Jordan, Arabic, English
+Kazakhstan, Qazaq, Russian
+Kenya, English, Kiswahili
+North Korea, Korean
+South Korea, Korean
+Kosovo, Albanian
+Kuwait, Arabic
+Kyrgyzstan, Kyrgyz
+Latvia, Latvian, Russian
+Labanon, Arabic
+Liberia, English
+Libya, Arabic
+Liechtenstein, German
+Lithuania, Lithuanian
+Macau, Cantonese
+Madagascar, Malagasy, French
+Malawi, English
+Malaysia, Bahasa Malaysia
+Maldives, Dhivehi, English
+Malta, Maltese
+Mexico, Spanish
+Micronesia, English
+Moldova, Romanian
+Monaco, French
+Mongolia, Mongolian
+Montenegro, Serbian, Montenegrin
+Montserrat, English
+Morocco, Arabic
+Mozambique, Makhuwa
+Nepal, Nepali
+Netherlands, Dutch
+New Zealand, English
+Nicaragua, Spanish
+Niger, French
+Nigeria, English
+Norway, Norwegian
+Oman, Arabic
+Pakistan, Punjabi
+Panama, Spanish
+Papua New Guinea, Tok Pisin, English
+Paraguay, Spanish, Guarani
+Peru, Spanish
+Philippines, Tagalog
+Poland, Polish
+Portugal, Portuguese
+Puerto Rico, Spanish, English
+Quatar, Arabic, English
+Romania, Romanian
+Russia, Russian
+Rwanda, Kinyarwanda
+Saudi Arabia, Arabic
+Senegal, French
+Serbia, Serbian
+Sierra Leone, English
+Singapore, English, Mandarin
+Slovakia, Slovak
+Slovenia, Slovene
+Somalia, Somali
+South Africa, Zulu
+South Sudan, English, Arabic
+Spain, Spanish
+Sri Lanka, Sinhala
+Sudan, Arabic, English
+Suriname, Dutch, English
+Sweden, Swedish
+Switzerland, German, French
+Syria, Arabic
+Taiwan, Mandarin
+Tajikistan, Tajik
+Tanzania, Swahili, English
+Thailand, Thai
+Togo, French
+Tonga, Tongan
+Trinidad and Tobago, English
+Tunisia, Arabic
+Turkey, Turkish
+Turkmenistan, Turkmen
+Turks and Caicos, English
+Uganda, English, Swahili
+Ukraine, Ukranian, Russian
+United Arab Emirates, Arabic, English
+United Kingdom, English
+United States, English
+Uruguay, Spanish
+Uzbekistan, Uzbek
+Venezuela, Spanish
+Vietname, Vietnamese
+Virgin Islands, English
+Yemen, Arabic
+Zimbabwe, Shona
+
+
