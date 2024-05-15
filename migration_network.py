@@ -79,8 +79,8 @@ for line in countries_list:
                      "migrants": num_migrants,
                      "origin_dem": origin_dem,
                      "dest_dem": dest_dem})
-        G.add_node(dest_code, name=dest_name)
-        G.add_node(origin_code, name=origin_name)
+        G.add_node(dest_code, name=dest_name, dem_index=dest_dem)
+        G.add_node(origin_code, name=origin_name, dem_index=origin_dem)
         if (num_migrants > MIN_EDGE_WEIGHT):
             G.add_edge(origin_code, dest_code, weight=num_migrants)
 
@@ -175,8 +175,8 @@ for c1, c2, cdata in G.edges(data=True):
     edge_widths = [0.0000005 * G[c1][c2]['weight']]
     edge_color = 'black'  # Default color for no democracy index data
 
-    origin_dem = next((float(country[politics_index].strip()) for country in politics if country[0].strip() == origin_name), -1)
-    dest_dem = next((float(country[politics_index].strip()) for country in politics if country[0].strip() == dest_name), -1)
+    origin_dem = G.nodes[c1]['dem_index']
+    dest_dem = G.nodes[c2]['dem_index']
 
     if origin_dem != -1 and dest_dem != -1:
         if dest_dem > origin_dem:
