@@ -1,0 +1,296 @@
+United Kingdom, Indonesia
+United Kingdom, Senegal
+United Kingdom, Yemen
+United Kingdom, Afghanistan
+United Kingdom, United States of America
+United Kingdom, Jamaica
+United Kingdom, Nicaragua
+United Kingdom, Canada
+United Kingdom, Sudan
+United Kingdom, Ghana
+United Kingdom, Australia
+United Kingdom, Bahamas
+United Kingdom, Lesotho
+United Kingdom, Malaysia
+United Kingdom, Kenya
+United Kingdom, Guyana
+United Kingdom, Belize
+United Kingdom, "   China Hong Kong SAR*"
+United Kingdom, British Virgin Islands
+United Kingdom, Dominica
+United Kingdom, Montserrat
+United Kingdom, Saint Kitts and Nevis
+United Kingdom, Somalia
+United Kingdom, Solomon Islands
+United Kingdom, Fiji
+United Kingdom, Kiribati
+United Kingdom, Pitcairn Islands
+United Kingdom, Vanuatu
+United Kingdom, Tonga
+United Kingdom, Tokelau
+United Kingdom, Barbados
+United Kingdom, Grenada
+United Kingdom, Saint Lucia
+United Kingdom, Saint Vincent and the Grenadines
+United Kingdom, Cameroon
+United Kingdom, Sri Lanka
+United Kingdom, Cyprus
+United Kingdom, Egypt
+United Kingdom, Equatorial Guinea
+United Kingdom, Falkland Islands (Malvinas)*
+United Kingdom, South Georgia and the South Sandwich Islands
+United Kingdom, Gambia
+United Kingdom, Gibraltar
+United Kingdom, India
+United Kingdom, Myanmar
+United Kingdom, Pakistan
+United Kingdom, Greece
+United Kingdom, Ireland
+United Kingdom, Maldives
+United Kingdom, Malta
+United Kingdom, Palestine
+United Kingdom, Jordan
+United Kingdom, Iraq
+United Kingdom, Mauritius
+United Kingdom, Oman
+United Kingdom, New Zealand
+United Kingdom, Nigeria
+United Kingdom, Zimbabwe
+United Kingdom, Zambia
+United Kingdom, Malawi
+United Kingdom, Seychelles
+United Kingdom, Sierra Leone
+United Kingdom, China
+United Kingdom, Singapore
+United Kingdom, South Africa
+United Kingdom, Botswana
+United Kingdom, Saudi Arabia
+United Kingdom, Saint Helena*
+United Kingdom, Eswatini
+United Kingdom, Mexico
+United Kingdom, Trinidad and Tobago
+United Kingdom, United Arab Emirates
+United Kingdom, Uganda
+United Kingdom, Russian Federation
+France*, Indonesia
+France*, Brazil
+France*, Papua New Guinea
+France*, Brazil
+France*, Canada
+France*, Algeria
+France*, Clipperton Island
+France*, Comoros
+France*, French Guiana
+France*, Central African Republic
+France*, Chad
+France*, Congo
+France*, India
+France*, Viet Nam
+France*, Cambodia
+France*, Lao People's Democratic Republic
+France*, French Polynesia*
+France*, Djibouti
+France*, Benin
+France*, Guinea
+France*, Mali
+France*, Mauritania
+France*, Niger
+France*, Senegal
+France*, Burkina Faso
+France*, Guadeloupe*
+France*, United States of America*
+France*, Madagascar
+France*, Martinique*
+France*, Morocco
+France*, Syrian Arab Republic
+France*, Lebanon
+France*, New Caledonia*
+France*, Saint Pierre and Miquelon*
+France*, Haiti
+France*, China
+France*, Tunisia
+France*, Vanuatu
+France*, Wallis and Futuna Islands*
+Russian Federation, United States of America*
+Russian Federation, Djibouti
+Russian Federation, Iran (Islamic Republic of)
+Russian Federation, Mongolia
+Russian Federation, China
+Germany, Cameroon
+Germany, Papua New Guinea
+Germany, Palau
+Germany, Samoa
+Germany, Solomon Islands
+Germany, United Republic of Tanzania*
+Germany, Namibia
+Germany, Kiribati
+Germany, China
+Germany, Northern Mariana Islands*
+Germany, Marshall Islands
+Germany, Nauru
+Germany, Togo
+Germany, United States of America*
+Germany, Venezuela (Bolivarian Republic of)
+Germany, Ghana
+Germany, Kenya
+Germany, Nigeria
+Germany, Democratic Republic of the Congo
+Germany, Somalia
+Germany, Guinea
+Germany, Antarctica
+Italy, Greece
+Italy, Albania
+Italy, Croatia
+Italy, Montenegro
+Italy, China* 
+Italy, Eritrea 
+Italy, Ethiopia
+Italy, Somalia 
+Italy, Libya
+Italy, Tunisia
+Italy, Egypt
+Italy, Spain* 
+Italy, Portugal
+Italy, France* 
+Italy, Turkey
+Italy, Switzerland
+Italy, Bulgaria
+Italy, Israel 
+Italy, United Kingdom*
+Netherlands*, Brazil 
+Netherlands*, Sri Lanka
+Netherlands*, Taiwan
+Netherlands*, South Africa
+Netherlands*, Suriname
+Netherlands*, Indonesia 
+Netherlands*, Papua New Guinea
+Netherlands*, Malaysia* 
+Netherlands*, Senegal
+Portugal, Angola
+Portugal, Cabo Verde
+Portugal, Morocco
+Portugal, Guinea-Bissau
+Portugal, Mozambique
+Portugal, Sao Tome and Principe
+Portugal, Benin
+Portugal, India
+Portugal, "   China Macao SAR*"
+Portugal, Japan
+Portugal, Sri Lanka 
+Portugal, Malaysia* 
+Portugal, Oman 
+Portugal, Indonesia 
+Portugal, Brazil
+Portugal, Uruguay
+Portugal, Argentina 
+Portugal, Canada
+Spain*, Morocco
+Spain*, Cuba 
+Spain*, United States of America* 
+Spain*, Philippines
+Spain*, Palau 
+Spain*, Northern Mariana Islands* 
+Spain*, Marshall Islands
+Spain*, Algeria
+Spain*, Tunisia 
+Spain*, Libya
+Spain*, Western Sahara
+Spain*, Italy
+Spain*, Peru
+Spain*, Chile
+Spain*, Brazil
+Spain*, Argentina
+Spain*, Equatorial Guinea
+Spain*, Colombia
+Spain*, Venezuela 
+Spain*, Mexico
+Spain*, Dominican Republic
+Spain*, Puerto Rico*
+Spain*, Taiwan
+Spain*, Indonesia
+Spain*, Brunei Darussalam
+Austria, Bosnia and Herzegovina
+Austria, China* 
+Austria, Belgium
+Austria, India
+Austria, Malaysia*
+Denmark*, India
+Denmark*, United States Virgin Islands* 
+Denmark*, Norway*
+Denmark*, United Kingdom*
+Denmark*, Latvia
+Denmark*, Faroe Islands*
+Denmark*, Greenland*
+Denmark*, Iceland
+Denmark*, Ghana
+Belgium, Democratic Republic of the Congo 
+Belgium, Rwanda
+Belgium, China* 
+Belgium, Guatemala
+Sweden, Estonia
+Sweden, Guadeloupe
+Sweden, United States of America*
+Sweden, Germany 
+Sweden, Ghana
+Poland, Latvia
+Poland, Gambia
+Poland, Sierra Leone
+Poland, Trinidad and Tobago
+Australia*, Papua New Guinea
+Australia*, Nauru
+New Zealand*, Cook Islands
+New Zealand*, Nauru
+New Zealand*, Niue*
+New Zealand*, Samoa
+Japan, United States of America* 
+Japan, South Korea
+Japan, Russian Federation 
+Japan, China* 
+Japan, Taiwan
+Thailand, Lao People's Democratic Republic
+Thailand, Cambodia
+Thailand, Malaysia*
+South Korea, China*
+South Korea, Russian Federation
+China*, South Korea
+China*, Viet Nam
+Myanmar, Thailand
+Myanmar, Lao People's Democratic Republic
+Myanmar, Cambodia
+Myanmar, India
+Indonesia, Timor-Leste
+United States of America*, China*
+United States of America*, Cuba
+United States of America*, Falkland Islands
+United States of America*, Haiti
+United States of America*, Liberia
+United States of America*, Mexico
+United States of America*, Nicaragua
+United States of America*, Panama
+Mexico, United States of America* 
+Mexico, Philippines
+Guatemala, Belize
+Guatemala, Mexico
+Venezuela, Guyana
+Paraguay, Brazil
+Bolivia, Argentina
+Bolivia, Brazil 
+Brazil, Uruguay
+Brazil, Cabo Verde
+Brazil, Angola
+Brazil, Mozambique
+Ethiopia, Eritrea
+Ethiopia, Yemen
+South Africa, Namibia
+Morocco, Western Sahara
+Egypt, Israel
+Egypt, Sudan
+Turkey, Indonesia
+Turkey, Maldives
+Turkey, Saudi Arabia
+Turkey, Serbia*
+Turkey, Bulgaria
+Turkey, Bosnia and Herzegovina
+Turkey, Albania
+Turkey, Hungary
+Turkey, Greece
