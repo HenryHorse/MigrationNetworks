@@ -1,77 +1,77 @@
-United Kingdom, Indonesia
-United Kingdom, Senegal
-United Kingdom, Yemen
-United Kingdom, Afghanistan
-United Kingdom, United States of America
-United Kingdom, Jamaica
-United Kingdom, Nicaragua
-United Kingdom, Canada
-United Kingdom, Sudan
-United Kingdom, Ghana
-United Kingdom, Australia
-United Kingdom, Bahamas
-United Kingdom, Lesotho
-United Kingdom, Malaysia
-United Kingdom, Kenya
-United Kingdom, Guyana
-United Kingdom, Belize
-United Kingdom, "   China Hong Kong SAR*"
-United Kingdom, British Virgin Islands
-United Kingdom, Dominica
-United Kingdom, Montserrat
-United Kingdom, Saint Kitts and Nevis
-United Kingdom, Somalia
-United Kingdom, Solomon Islands
-United Kingdom, Fiji
-United Kingdom, Kiribati
-United Kingdom, Pitcairn Islands
-United Kingdom, Vanuatu
-United Kingdom, Tonga
-United Kingdom, Tokelau
-United Kingdom, Barbados
-United Kingdom, Grenada
-United Kingdom, Saint Lucia
-United Kingdom, Saint Vincent and the Grenadines
-United Kingdom, Cameroon
-United Kingdom, Sri Lanka
-United Kingdom, Cyprus
-United Kingdom, Egypt
-United Kingdom, Equatorial Guinea
-United Kingdom, Falkland Islands (Malvinas)*
-United Kingdom, South Georgia and the South Sandwich Islands
-United Kingdom, Gambia
-United Kingdom, Gibraltar
-United Kingdom, India
-United Kingdom, Myanmar
-United Kingdom, Pakistan
-United Kingdom, Greece
-United Kingdom, Ireland
-United Kingdom, Maldives
-United Kingdom, Malta
-United Kingdom, Palestine
-United Kingdom, Jordan
-United Kingdom, Iraq
-United Kingdom, Mauritius
-United Kingdom, Oman
-United Kingdom, New Zealand
-United Kingdom, Nigeria
-United Kingdom, Zimbabwe
-United Kingdom, Zambia
-United Kingdom, Malawi
-United Kingdom, Seychelles
-United Kingdom, Sierra Leone
-United Kingdom, China
-United Kingdom, Singapore
-United Kingdom, South Africa
-United Kingdom, Botswana
-United Kingdom, Saudi Arabia
-United Kingdom, Saint Helena*
-United Kingdom, Eswatini
-United Kingdom, Mexico
-United Kingdom, Trinidad and Tobago
-United Kingdom, United Arab Emirates
-United Kingdom, Uganda
-United Kingdom, Russian Federation
+United Kingdom*, Indonesia
+United Kingdom*, Senegal
+United Kingdom*, Yemen
+United Kingdom*, Afghanistan
+United Kingdom*, United States of America
+United Kingdom*, Jamaica
+United Kingdom*, Nicaragua
+United Kingdom*, Canada
+United Kingdom*, Sudan
+United Kingdom*, Ghana
+United Kingdom*, Australia
+United Kingdom*, Bahamas
+United Kingdom*, Lesotho
+United Kingdom*, Malaysia
+United Kingdom*, Kenya
+United Kingdom*, Guyana
+United Kingdom*, Belize
+United Kingdom*, "   China Hong Kong SAR*"
+United Kingdom*, British Virgin Islands
+United Kingdom*, Dominica
+United Kingdom*, Montserrat
+United Kingdom*, Saint Kitts and Nevis
+United Kingdom*, Somalia
+United Kingdom*, Solomon Islands
+United Kingdom*, Fiji
+United Kingdom*, Kiribati
+United Kingdom*, Pitcairn Islands
+United Kingdom*, Vanuatu
+United Kingdom*, Tonga
+United Kingdom*, Tokelau
+United Kingdom*, Barbados
+United Kingdom*, Grenada
+United Kingdom*, Saint Lucia
+United Kingdom*, Saint Vincent and the Grenadines
+United Kingdom*, Cameroon
+United Kingdom*, Sri Lanka
+United Kingdom*, Cyprus
+United Kingdom*, Egypt
+United Kingdom*, Equatorial Guinea
+United Kingdom*, Falkland Islands (Malvinas)*
+United Kingdom*, South Georgia and the South Sandwich Islands
+United Kingdom*, Gambia
+United Kingdom*, Gibraltar
+United Kingdom*, India
+United Kingdom*, Myanmar
+United Kingdom*, Pakistan
+United Kingdom*, Greece
+United Kingdom*, Ireland
+United Kingdom*, Maldives
+United Kingdom*, Malta
+United Kingdom*, Palestine
+United Kingdom*, Jordan
+United Kingdom*, Iraq
+United Kingdom*, Mauritius
+United Kingdom*, Oman
+United Kingdom*, New Zealand
+United Kingdom*, Nigeria
+United Kingdom*, Zimbabwe
+United Kingdom*, Zambia
+United Kingdom*, Malawi
+United Kingdom*, Seychelles
+United Kingdom*, Sierra Leone
+United Kingdom*, China
+United Kingdom*, Singapore
+United Kingdom*, South Africa
+United Kingdom*, Botswana
+United Kingdom*, Saudi Arabia
+United Kingdom*, Saint Helena*
+United Kingdom*, Eswatini
+United Kingdom*, Mexico
+United Kingdom*, Trinidad and Tobago
+United Kingdom*, United Arab Emirates
+United Kingdom*, Uganda
+United Kingdom*, Russian Federation
 France*, Indonesia
 France*, Brazil
 France*, Papua New Guinea
@@ -156,7 +156,7 @@ Italy, Turkey
 Italy, Switzerland
 Italy, Bulgaria
 Italy, Israel 
-Italy, United Kingdom*
+Italy, United Kingdom**
 Netherlands*, Brazil 
 Netherlands*, Sri Lanka
 Netherlands*, Taiwan
@@ -217,7 +217,7 @@ Austria, Malaysia*
 Denmark*, India
 Denmark*, United States Virgin Islands* 
 Denmark*, Norway*
-Denmark*, United Kingdom*
+Denmark*, United Kingdom**
 Denmark*, Latvia
 Denmark*, Faroe Islands*
 Denmark*, Greenland*
