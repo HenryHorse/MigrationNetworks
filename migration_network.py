@@ -6,7 +6,10 @@ import sys
 from mpl_toolkits.basemap import Basemap
 
 MIN_EDGE_WEIGHT = 100000
+MIN_EDGE_PERCENTAGE = 0.001
 BIN_SIZE = 5
+EDGE_SCALING = 1
+
 
 def main():
     # get data from main UN dataset
@@ -139,6 +142,10 @@ def get_data(G, migration_flows, country_list, politics, year_index, population_
                     origin_pop = country[population_index]
                 elif (country[0].strip() == dest_name):
                     dest_pop = country[population_index]
+            if int(origin_pop) > 0:
+                migrant_percentage = int(num_migrants) / int(origin_pop)
+            else:
+                migrant_percentage = -1
             data.append({"origin_name": origin_name,
                         "origin_code": origin_code,
                         "dest_name": dest_name,
@@ -146,12 +153,15 @@ def get_data(G, migration_flows, country_list, politics, year_index, population_
                         "origin_pop": origin_pop,
                         "dest_pop": dest_pop,
                         "migrants": num_migrants,
+                        "migrant_percentage": migrant_percentage,
                         "origin_dem": origin_dem,
                         "dest_dem": dest_dem})
             G.add_node(dest_code, name=dest_name, dem_index=dest_dem)
             G.add_node(origin_code, name=origin_name, dem_index=origin_dem)
-            if (num_migrants > MIN_EDGE_WEIGHT):
-                G.add_edge(origin_code, dest_code, weight=num_migrants)
+            # if (num_migrants > MIN_EDGE_WEIGHT):
+            #     G.add_edge(origin_code, dest_code, weight=num_migrants)
+            if (migrant_percentage > MIN_EDGE_PERCENTAGE):
+                G.add_edge(origin_code, dest_code, weight=migrant_percentage)
     return data
 
 def betweenness_centrality(G):
@@ -224,7 +234,7 @@ def draw_map(G, country_list):
             lat, lon = countries[country]
             pos[node[0]] = m(lon, lat)  # Map projection coordinates
         else:
-            print(f"Warning: No coordinates found for {country}")
+            #print(f"Warning: No coordinates found for {country}")
             removed_nodes.append(node[0])
     for node in removed_nodes:
         G.remove_node(node)
@@ -236,7 +246,7 @@ def draw_map(G, country_list):
     for c1, c2, cdata in G.edges(data=True):
         origin_name = G.nodes[c1]['name']
         dest_name = G.nodes[c2]['name']
-        edge_widths = [0.0000005 * G[c1][c2]['weight']]
+        edge_widths = [EDGE_SCALING * G[c1][c2]['weight']]
         edge_color = 'black'  # Default color for no democracy index data
 
         origin_dem = G.nodes[c1]['dem_index']
@@ -262,11 +272,13 @@ def draw_network(G):
     node_size = max(100, 7000 / len(G.nodes()))  # Avoid too large node sizes for large graphs
     nx.draw_networkx_nodes(G, pos, node_size=node_size, node_color='skyblue', alpha=0.6)
     # Edges
-    edge_widths = [0.0000005 * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
+    edge_widths = [EDGE_SCALING * G[u][v]['weight'] for u, v in G.edges()]  # Scale down edge widths if they are too large
     nx.draw_networkx_edges(G, pos, width=edge_widths, alpha=0.5, edge_color='black')
     # Labels
+    labels = {node: G.nodes[node]['name'] for node in G.nodes()} 
     font_size = max(8, 100 / len(G.nodes())**0.5)  # Smaller font size for larger graphs
-    nx.draw_networkx_labels(G, pos, font_size=font_size, font_family='sans-serif')
+    nx.draw_networkx_labels(G, pos, labels=labels, font_size=font_size, font_family='sans-serif')
+
 
     plt.axis('off')  # Turn off the axis
     plt.title('Network of Migration (' + sys.argv[1] + ')')

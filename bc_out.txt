@@ -1,233 +1,233 @@
-{'name': 'Germany', 'dem_index': 8.67}: 0.04440741421960633
-{'name': 'Russian Federation', 'dem_index': 3.31}: 0.025155110807820163
-{'name': 'United States of America*', 'dem_index': 7.92}: 0.02469058548184165
-{'name': 'United Kingdom*', 'dem_index': 8.54}: 0.014942314003274596
-{'name': 'France*', 'dem_index': 7.99}: 0.012921260458206265
-{'name': 'Italy', 'dem_index': 7.74}: 0.006486435134834146
-{'name': 'Portugal', 'dem_index': 7.9}: 0.0049743120863810514
-{'name': 'Kenya', 'dem_index': 5.05}: 0.004725518734139424
-{'name': 'Spain*', 'dem_index': 8.12}: 0.003717861230176501
-{'name': 'Ukraine*', 'dem_index': 5.81}: 0.0033867439347734906
-{'name': 'Uganda', 'dem_index': 4.94}: 0.0032654127481713687
-{'name': 'Democratic Republic of the Congo', 'dem_index': 1.13}: 0.0028735632183908046
-{'name': 'Poland', 'dem_index': 6.85}: 0.002823078900665107
-{'name': 'India', 'dem_index': 6.61}: 0.0027530539383987655
-{'name': 'China*', 'dem_index': 2.27}: 0.002679904250101294
-{'name': 'Nigeria', 'dem_index': 4.1}: 0.0024756493506493506
-{'name': 'Brazil', 'dem_index': 6.92}: 0.002143354729561626
-{'name': 'South Sudan', 'dem_index': -1}: 0.0019965666517390655
-{'name': 'Argentina', 'dem_index': 6.95}: 0.001939655172413793
-{'name': "Côte d'Ivoire", 'dem_index': -1}: 0.0018961163357715082
-{'name': 'Bangladesh', 'dem_index': 5.99}: 0.0017787614000668182
-{'name': 'Ethiopia', 'dem_index': 3.38}: 0.0012268622182415286
-{'name': 'Sudan', 'dem_index': 2.54}: 0.001222197342886998
-{'name': 'South Africa', 'dem_index': 7.05}: 0.0011635754092650644
-{'name': 'Republic of Korea', 'dem_index': 8.01}: 0.0011591104571400136
-{'name': 'Netherlands*', 'dem_index': 8.96}: 0.0009947735625075523
-{'name': 'Australia*', 'dem_index': 8.96}: 0.0009368846807270452
-{'name': 'Zimbabwe', 'dem_index': 3.16}: 0.0009004764392695426
-{'name': 'Rwanda', 'dem_index': 3.1}: 0.0008396775638154948
-{'name': 'Pakistan', 'dem_index': 4.31}: 0.0008272378962034134
-{'name': 'Thailand', 'dem_index': 6.04}: 0.0008023585609792506
-{'name': 'Algeria', 'dem_index': 3.77}: 0.0006530825496342737
-{'name': 'Czechia', 'dem_index': 7.67}: 0.0006344230482161516
-{'name': 'Turkey', 'dem_index': 4.48}: 0.0006254487165817216
-{'name': 'Syrian Arab Republic', 'dem_index': 1.43}: 0.0005361496740807084
-{'name': 'Afghanistan', 'dem_index': 2.85}: 0.00040428919739264564
-{'name': 'Malaysia*', 'dem_index': 7.19}: 0.00033649300890680194
-{'name': 'Ghana', 'dem_index': 6.5}: 0.0003234313579141165
-{'name': 'Egypt', 'dem_index': 2.93}: 0.00031379061551475336
-{'name': 'Mali', 'dem_index': 3.93}: 0.0002612330198537095
-{'name': 'Angola', 'dem_index': 3.66}: 0.00024257351843558737
-{'name': '"   China Hong Kong SAR*"', 'dem_index': -1}: 0.00023204422834964704
-{'name': 'Greece', 'dem_index': 7.39}: 0.00019592476489028212
-{'name': 'Romania', 'dem_index': 6.4}: 0.0001436781609195402
-{'name': 'Belarus', 'dem_index': 2.59}: 0.0001132009752699408
-{'name': 'Lebanon', 'dem_index': 4.16}: 0.00011009105836692041
-{'name': 'Venezuela (Bolivarian Republic of)', 'dem_index': 2.76}: 0.00010076130765785939
-{'name': 'Canada', 'dem_index': 9.24}: 9.551887630705363e-05
-{'name': 'Burundi', 'dem_index': 2.14}: 9.329750709061053e-05
-{'name': 'Kazakhstan', 'dem_index': 3.14}: 9.067629141520768e-05
-{'name': 'Belgium', 'dem_index': 7.51}: 8.630019405881474e-05
-{'name': 'Chad', 'dem_index': 1.55}: 7.463800567248842e-05
-{'name': 'Jordan', 'dem_index': 3.62}: 4.8203711996815434e-05
-{'name': 'Dominican Republic', 'dem_index': 6.32}: 3.998464589597594e-05
-{'name': 'Yemen', 'dem_index': 1.95}: 2.7989252127183158e-05
-{'name': 'Chile', 'dem_index': 8.28}: 2.7989252127183158e-05
-{'name': 'Peru', 'dem_index': 6.53}: 2.2391401701746525e-05
-{'name': 'Switzerland', 'dem_index': 8.83}: 1.8659501418122106e-05
-{'name': 'Israel', 'dem_index': 7.84}: 1.1195700850873263e-05
-{'name': 'Iraq', 'dem_index': 3.62}: 1.1195700850873263e-05
-{'name': 'Serbia*', 'dem_index': 6.22}: 9.329750709061053e-06
-{'name': 'Iran (Islamic Republic of)', 'dem_index': 2.2}: 4.6648753545305266e-06
-{'name': 'United Republic of Tanzania*', 'dem_index': 5.1}: 0.0
+{'name': 'Spain*', 'dem_index': 8.12}: 0.163603182802081
+{'name': 'Venezuela (Bolivarian Republic of)', 'dem_index': 2.76}: 0.15475505096257533
+{'name': 'Germany', 'dem_index': 8.67}: 0.12186260932923469
+{'name': 'United Kingdom*', 'dem_index': 8.54}: 0.12056810399620162
+{'name': 'Dominican Republic', 'dem_index': 6.32}: 0.11606461190601429
+{'name': 'Puerto Rico*', 'dem_index': -1}: 0.11464302110881214
+{'name': 'Mali', 'dem_index': 3.93}: 0.10744324645064854
+{'name': 'Portugal', 'dem_index': 7.9}: 0.1029469808841558
+{'name': 'United States Virgin Islands*', 'dem_index': -1}: 0.0921114185174525
+{'name': 'France*', 'dem_index': 7.99}: 0.08435460060439585
+{'name': 'Andorra', 'dem_index': -1}: 0.06508038024717616
+{'name': 'Congo', 'dem_index': 3.11}: 0.059542648331085024
+{'name': 'State of Palestine*', 'dem_index': 3.83}: 0.05868080566615901
+{'name': 'Russian Federation', 'dem_index': 3.31}: 0.05348766294648205
+{'name': 'Greece', 'dem_index': 7.39}: 0.041267675805796836
+{'name': 'Israel', 'dem_index': 7.84}: 0.04086777037526882
+{'name': 'Democratic Republic of the Congo', 'dem_index': 1.13}: 0.03928346927679907
+{'name': 'Libya', 'dem_index': 1.95}: 0.03739700799839144
+{'name': 'Romania', 'dem_index': 6.4}: 0.033240123905067996
+{'name': 'Grenada', 'dem_index': -1}: 0.030820658909972667
+{'name': "Côte d'Ivoire", 'dem_index': -1}: 0.02997567941186681
+{'name': 'Italy', 'dem_index': 7.74}: 0.028679760500746304
+{'name': 'Bangladesh', 'dem_index': 5.99}: 0.027527762581981446
+{'name': 'Guinea', 'dem_index': 3.08}: 0.027472814320041183
+{'name': 'Poland', 'dem_index': 6.85}: 0.026816196642514594
+{'name': 'Guam*', 'dem_index': -1}: 0.026073444346188593
+{'name': 'Norway*', 'dem_index': 9.81}: 0.025498526325059213
+{'name': 'Antigua and Barbuda', 'dem_index': -1}: 0.023923209567613415
+{'name': 'Albania', 'dem_index': 6.08}: 0.02355809014915262
+{'name': 'Switzerland', 'dem_index': 8.83}: 0.023046032999571666
+{'name': 'Panama', 'dem_index': 7.18}: 0.022618425635667013
+{'name': 'South Sudan', 'dem_index': -1}: 0.02075343526368794
+{'name': 'North Macedonia', 'dem_index': 5.89}: 0.020431814417181938
+{'name': 'Ukraine*', 'dem_index': 5.81}: 0.020368269122509552
+{'name': 'Belarus', 'dem_index': 2.59}: 0.019578068937624007
+{'name': 'Costa Rica', 'dem_index': 8.16}: 0.017561256477512634
+{'name': 'Nicaragua', 'dem_index': 3.6}: 0.01741941666790525
+{'name': 'Saint Kitts and Nevis', 'dem_index': -1}: 0.01643415662392375
+{'name': 'Sweden', 'dem_index': 9.26}: 0.014863939328085274
+{'name': 'Saudi Arabia', 'dem_index': 2.08}: 0.014268437201768881
+{'name': 'Uzbekistan', 'dem_index': 2.12}: 0.013522929106644956
+{'name': 'Dominica', 'dem_index': -1}: 0.013035563908202501
+{'name': 'Malaysia*', 'dem_index': 7.19}: 0.01167994498629064
+{'name': 'Kuwait', 'dem_index': 3.8}: 0.011660948850632957
+{'name': 'Angola', 'dem_index': 3.66}: 0.01146353566775704
+{'name': 'Zambia', 'dem_index': 4.86}: 0.010960058004392977
+{'name': 'United Arab Emirates', 'dem_index': 2.7}: 0.010910370921838712
+{'name': 'Anguilla*', 'dem_index': -1}: 0.010853774468520089
+{'name': 'Australia*', 'dem_index': 8.96}: 0.010834401096319493
+{'name': 'Argentina', 'dem_index': 6.95}: 0.010281191466692706
+{'name': 'Sudan', 'dem_index': 2.54}: 0.010274895901793623
+{'name': 'Philippines', 'dem_index': 6.56}: 0.01025804472018401
+{'name': 'Ireland', 'dem_index': 9.05}: 0.00873051349228668
+{'name': 'Canada', 'dem_index': 9.24}: 0.008681478880927563
+{'name': 'Lebanon', 'dem_index': 4.16}: 0.008658561152613582
+{'name': 'Republic of Korea', 'dem_index': 8.01}: 0.00859659859533908
+{'name': 'Belgium', 'dem_index': 7.51}: 0.008582892753365408
+{'name': '"   China Hong Kong SAR*"', 'dem_index': -1}: 0.00853130546018477
+{'name': 'Saint Vincent and the Grenadines', 'dem_index': -1}: 0.00836096328287327
+{'name': 'Jamaica', 'dem_index': 7.13}: 0.00833377760717662
+{'name': 'Benin', 'dem_index': 4.58}: 0.007980310166682367
+{'name': 'Micronesia (Fed. States of)', 'dem_index': -1}: 0.00783852752847247
+{'name': 'Bulgaria', 'dem_index': 6.71}: 0.007429136168982485
+{'name': 'Mozambique', 'dem_index': 3.51}: 0.007367627241395715
+{'name': 'Palau', 'dem_index': -1}: 0.00672933364388081
+{'name': 'Hungary', 'dem_index': 6.56}: 0.0064983501578430355
+{'name': 'India', 'dem_index': 6.61}: 0.006457249183849041
+{'name': 'Kazakhstan', 'dem_index': 3.14}: 0.0059827383187213
+{'name': 'Jordan', 'dem_index': 3.62}: 0.00594420877952428
+{'name': 'Uganda', 'dem_index': 4.94}: 0.005713898247887856
+{'name': 'Zimbabwe', 'dem_index': 3.16}: 0.005326470874500431
+{'name': 'Austria', 'dem_index': 8.16}: 0.005096972359527748
+{'name': 'South Africa', 'dem_index': 7.05}: 0.005063795554744216
+{'name': 'China*', 'dem_index': 2.27}: 0.005032972052536539
+{'name': 'British Virgin Islands*', 'dem_index': -1}: 0.004978194871349584
+{'name': 'Guyana', 'dem_index': 6.01}: 0.004952357553958539
+{'name': 'Samoa', 'dem_index': -1}: 0.00490483163620388
+{'name': 'Senegal', 'dem_index': 5.67}: 0.004864491550038183
+{'name': 'Chad', 'dem_index': 1.55}: 0.004766066126903565
+{'name': 'Ghana', 'dem_index': 6.5}: 0.004365156685054084
+{'name': 'Singapore', 'dem_index': 6.03}: 0.004296057503461155
+{'name': 'Iraq', 'dem_index': 3.62}: 0.004276500514662707
+{'name': 'Northern Mariana Islands*', 'dem_index': -1}: 0.00419211615332305
+{'name': 'French Polynesia*', 'dem_index': -1}: 0.004052946206859104
+{'name': 'Peru', 'dem_index': 6.53}: 0.004040564558925508
+{'name': 'Netherlands*', 'dem_index': 8.96}: 0.004024313694720582
+{'name': 'Cyprus*', 'dem_index': 7.56}: 0.0039380641912815685
+{'name': 'Niger', 'dem_index': 3.29}: 0.003784146214452974
+{'name': 'United States of America*', 'dem_index': 7.92}: 0.0037354686804121746
+{'name': 'Saint Lucia', 'dem_index': -1}: 0.0034564037950737462
+{'name': 'Chile', 'dem_index': 8.28}: 0.0033116915324147744
+{'name': 'Latvia', 'dem_index': 7.24}: 0.002707116604628283
+{'name': 'Sri Lanka', 'dem_index': 6.14}: 0.0025989905398212613
+{'name': 'Fiji', 'dem_index': 5.72}: 0.002581430952736371
+{'name': 'Cameroon', 'dem_index': 2.77}: 0.002572072256913278
+{'name': 'Egypt', 'dem_index': 2.93}: 0.0024750951984250915
+{'name': 'Guadeloupe*', 'dem_index': -1}: 0.002449237270665842
+{'name': 'Rwanda', 'dem_index': 3.1}: 0.0024239682637857735
+{'name': 'Finland*', 'dem_index': 9.2}: 0.0023790467154215463
+{'name': 'Syrian Arab Republic', 'dem_index': 1.43}: 0.002359749048007369
+{'name': 'Iceland', 'dem_index': 9.37}: 0.002226314118947348
+{'name': 'El Salvador', 'dem_index': 5.9}: 0.002197697498302066
+{'name': 'Lithuania', 'dem_index': 7.13}: 0.0021077218563866945
+{'name': 'Indonesia', 'dem_index': 6.3}: 0.0020544907699240438
+{'name': 'Guatemala', 'dem_index': 4.97}: 0.002053426972258141
+{'name': 'New Zealand*', 'dem_index': 9.25}: 0.0020088662479043396
+{'name': 'Gambia', 'dem_index': 4.49}: 0.0020061172448655657
+{'name': 'Bahrain', 'dem_index': 2.49}: 0.001971829349516318
+{'name': 'Belize', 'dem_index': -1}: 0.00196730743920623
+{'name': 'Bolivia (Plurinational State of)', 'dem_index': 5.08}: 0.0019602157050376927
+{'name': 'Czechia', 'dem_index': 7.67}: 0.0019531015647490902
+{'name': 'Gabon', 'dem_index': 3.54}: 0.0019397595094527472
+{'name': 'Mauritania', 'dem_index': 3.92}: 0.0019379718339965284
+{'name': 'Qatar', 'dem_index': 3.24}: 0.0018792932439092307
+{'name': 'Togo', 'dem_index': 2.8}: 0.00176659963661755
+{'name': 'Denmark*', 'dem_index': 9.15}: 0.0016340584799857982
+{'name': 'Estonia', 'dem_index': 7.84}: 0.001623236518285143
+{'name': 'American Samoa*', 'dem_index': -1}: 0.0015778829818238684
+{'name': 'Thailand', 'dem_index': 6.04}: 0.0015687531543442871
+{'name': 'Burkina Faso', 'dem_index': 3.73}: 0.0015200196063450467
+{'name': 'Luxembourg', 'dem_index': 8.68}: 0.0014961092105645064
+{'name': 'Burundi', 'dem_index': 2.14}: 0.0013518808777429477
+{'name': 'Montserrat*', 'dem_index': -1}: 0.001286126070608829
+{'name': 'Nepal', 'dem_index': 5.22}: 0.00127404410039878
+{'name': 'Ecuador', 'dem_index': 6.13}: 0.0012487871324078218
+{'name': 'Nauru', 'dem_index': -1}: 0.001226849357682907
+{'name': 'New Caledonia*', 'dem_index': -1}: 0.0011778229555603043
+{'name': 'Marshall Islands', 'dem_index': -1}: 0.0010599763883994999
+{'name': 'Bahamas', 'dem_index': -1}: 0.0010178758023585608
+{'name': 'Pakistan', 'dem_index': 4.31}: 0.000953646257749482
+{'name': 'Kenya', 'dem_index': 5.05}: 0.0009254504286412033
+{'name': 'Algeria', 'dem_index': 3.77}: 0.0008359315275459476
+{'name': 'Honduras', 'dem_index': 5.36}: 0.0007378499989337426
+{'name': 'Tonga', 'dem_index': -1}: 0.0007065367706881365
+{'name': 'Oman', 'dem_index': 3.0}: 0.000670806719983836
+{'name': 'Aruba*', 'dem_index': -1}: 0.0006067905614479729
+{'name': 'Kiribati', 'dem_index': -1}: 0.0005990422759875549
+{'name': 'Turkey', 'dem_index': 4.48}: 0.0005326364097862095
+{'name': 'Sierra Leone', 'dem_index': 4.86}: 0.0004998020154200181
+{'name': 'Slovakia', 'dem_index': 6.97}: 0.00045359297906319846
+{'name': 'Croatia', 'dem_index': 6.5}: 0.0004505158907868267
+{'name': 'Armenia', 'dem_index': 5.35}: 0.00044747396124467326
+{'name': 'Cabo Verde', 'dem_index': 7.65}: 0.00043630922493439285
+{'name': 'Barbados', 'dem_index': -1}: 0.0003963144819056148
+{'name': 'Equatorial Guinea', 'dem_index': 1.92}: 0.0003428905522501581
+{'name': 'Malawi', 'dem_index': 5.74}: 0.0003418242950262653
+{'name': 'Turks and Caicos Islands*', 'dem_index': -1}: 0.0003261266192300675
+{'name': 'Serbia*', 'dem_index': 6.22}: 0.0003185154005239093
+{'name': 'Viet Nam', 'dem_index': 2.94}: 0.00031396832505206884
+{'name': 'Liberia', 'dem_index': 5.32}: 0.00030295773830256586
+{'name': 'Sao Tome and Principe', 'dem_index': -1}: 0.00028166961664498607
+{'name': 'French Guiana*', 'dem_index': -1}: 0.0002813364112625196
+{'name': 'Bosnia and Herzegovina', 'dem_index': 4.84}: 0.00026802367823415736
+{'name': 'Trinidad and Tobago', 'dem_index': 7.16}: 0.00022656257262168594
+{'name': 'Cayman Islands*', 'dem_index': -1}: 0.00022502470162568685
+{'name': 'Tunisia', 'dem_index': 6.59}: 0.00019343838477291228
+{'name': 'Ethiopia', 'dem_index': 3.38}: 0.00018198794399420658
+{'name': 'Brunei Darussalam', 'dem_index': -1}: 0.00014623475494501023
+{'name': 'Georgia*', 'dem_index': 5.31}: 0.00011400066818786029
+{'name': 'Azerbaijan*', 'dem_index': 2.68}: 0.00011001331044434492
+{'name': 'Montenegro', 'dem_index': 5.77}: 9.951734089665123e-05
+{'name': 'Yemen', 'dem_index': 1.95}: 8.707767328456981e-05
+{'name': 'Tokelau*', 'dem_index': -1}: 5.7533462705876496e-05
+{'name': 'Nigeria', 'dem_index': 4.1}: 5.535652087376225e-05
+{'name': 'Mauritius*', 'dem_index': 8.14}: 5.257980935320837e-05
+{'name': 'Greenland*', 'dem_index': -1}: 4.478280340349305e-05
+{'name': 'Tajikistan', 'dem_index': 1.94}: 4.105090311986863e-05
+{'name': 'Djibouti', 'dem_index': 2.71}: 3.901532114698258e-05
+{'name': 'Brazil', 'dem_index': 6.92}: 3.709490588293834e-05
+{'name': 'Suriname', 'dem_index': 6.82}: 3.576404438473403e-05
+{'name': 'Niue*', 'dem_index': -1}: 2.7989252127183158e-05
+{'name': 'United Republic of Tanzania*', 'dem_index': 5.1}: 2.4568343533860775e-05
+{'name': 'Paraguay', 'dem_index': 6.18}: 2.452391614953191e-05
+{'name': 'Liechtenstein', 'dem_index': -1}: 2.2391401701746525e-05
+{'name': 'Colombia', 'dem_index': 7.04}: 1.0884709160571227e-05
+{'name': 'Namibia', 'dem_index': 6.52}: 9.329750709061053e-06
+{'name': 'Kyrgyzstan', 'dem_index': 4.21}: 9.329750709061053e-06
+{'name': 'Cook Islands*', 'dem_index': -1}: 9.329750709061053e-06
+{'name': 'Slovenia', 'dem_index': 7.54}: 2.487933522416281e-06
 {'name': 'Other', 'dem_index': -1}: 0.0
 {'name': 'Comoros', 'dem_index': 3.09}: 0.0
 {'name': 'Madagascar', 'dem_index': 5.7}: 0.0
 {'name': 'Réunion*', 'dem_index': -1}: 0.0
-{'name': 'Djibouti', 'dem_index': 2.71}: 0.0
 {'name': 'Somalia', 'dem_index': -1}: 0.0
 {'name': 'Eritrea', 'dem_index': 2.15}: 0.0
-{'name': 'Malawi', 'dem_index': 5.74}: 0.0
-{'name': 'Mozambique', 'dem_index': 3.51}: 0.0
-{'name': 'Zambia', 'dem_index': 4.86}: 0.0
-{'name': 'Namibia', 'dem_index': 6.52}: 0.0
-{'name': 'Congo', 'dem_index': 3.11}: 0.0
-{'name': 'Mauritius*', 'dem_index': 8.14}: 0.0
-{'name': 'Sri Lanka', 'dem_index': 6.14}: 0.0
-{'name': 'Ireland', 'dem_index': 9.05}: 0.0
 {'name': 'Japan', 'dem_index': 8.13}: 0.0
 {'name': 'Seychelles', 'dem_index': -1}: 0.0
 {'name': 'Mayotte*', 'dem_index': -1}: 0.0
-{'name': 'Cabo Verde', 'dem_index': 7.65}: 0.0
 {'name': 'Lesotho', 'dem_index': 6.3}: 0.0
 {'name': 'Cuba', 'dem_index': 2.84}: 0.0
-{'name': 'Indonesia', 'dem_index': 6.3}: 0.0
 {'name': 'Maldives', 'dem_index': -1}: 0.0
-{'name': 'Nepal', 'dem_index': 5.22}: 0.0
-{'name': 'Philippines', 'dem_index': 6.56}: 0.0
 {'name': 'Central African Republic', 'dem_index': 1.32}: 0.0
-{'name': 'Libya', 'dem_index': 1.95}: 0.0
-{'name': 'Denmark*', 'dem_index': 9.15}: 0.0
-{'name': 'Hungary', 'dem_index': 6.56}: 0.0
 {'name': "Dem. People's Republic of Korea", 'dem_index': 1.08}: 0.0
-{'name': 'Norway*', 'dem_index': 9.81}: 0.0
-{'name': 'Sweden', 'dem_index': 9.26}: 0.0
-{'name': 'Togo', 'dem_index': 2.8}: 0.0
 {'name': 'Botswana', 'dem_index': 7.62}: 0.0
 {'name': 'Eswatini', 'dem_index': 3.08}: 0.0
-{'name': 'Cameroon', 'dem_index': 2.77}: 0.0
-{'name': 'Senegal', 'dem_index': 5.67}: 0.0
-{'name': 'Guinea', 'dem_index': 3.08}: 0.0
-{'name': 'Sao Tome and Principe', 'dem_index': -1}: 0.0
-{'name': 'Benin', 'dem_index': 4.58}: 0.0
-{'name': 'Equatorial Guinea', 'dem_index': 1.92}: 0.0
-{'name': 'Gabon', 'dem_index': 3.54}: 0.0
-{'name': 'Liberia', 'dem_index': 5.32}: 0.0
-{'name': 'Niger', 'dem_index': 3.29}: 0.0
-{'name': 'Austria', 'dem_index': 8.16}: 0.0
-{'name': 'Cyprus*', 'dem_index': 7.56}: 0.0
-{'name': 'Slovenia', 'dem_index': 7.54}: 0.0
-{'name': 'Mauritania', 'dem_index': 3.92}: 0.0
 {'name': 'Morocco', 'dem_index': 5.04}: 0.0
-{'name': 'Tunisia', 'dem_index': 6.59}: 0.0
-{'name': 'Burkina Faso', 'dem_index': 3.73}: 0.0
-{'name': 'State of Palestine*', 'dem_index': 3.83}: 0.0
-{'name': 'Kuwait', 'dem_index': 3.8}: 0.0
-{'name': 'Saudi Arabia', 'dem_index': 2.08}: 0.0
 {'name': 'Western Sahara', 'dem_index': -1}: 0.0
-{'name': 'Albania', 'dem_index': 6.08}: 0.0
-{'name': 'Antigua and Barbuda', 'dem_index': -1}: 0.0
-{'name': 'Azerbaijan*', 'dem_index': 2.68}: 0.0
-{'name': 'Bahamas', 'dem_index': -1}: 0.0
-{'name': 'Bahrain', 'dem_index': 2.49}: 0.0
-{'name': 'Armenia', 'dem_index': 5.35}: 0.0
-{'name': 'Bosnia and Herzegovina', 'dem_index': 4.84}: 0.0
-{'name': 'Brunei Darussalam', 'dem_index': -1}: 0.0
-{'name': 'Bulgaria', 'dem_index': 6.71}: 0.0
+{'name': 'Afghanistan', 'dem_index': 2.85}: 0.0
 {'name': 'Myanmar', 'dem_index': 3.04}: 0.0
-{'name': 'Colombia', 'dem_index': 7.04}: 0.0
-{'name': 'Croatia', 'dem_index': 6.5}: 0.0
-{'name': 'Ecuador', 'dem_index': 6.13}: 0.0
-{'name': 'El Salvador', 'dem_index': 5.9}: 0.0
-{'name': 'Estonia', 'dem_index': 7.84}: 0.0
-{'name': 'Finland*', 'dem_index': 9.2}: 0.0
-{'name': 'Gambia', 'dem_index': 4.49}: 0.0
 {'name': 'Gibraltar*', 'dem_index': -1}: 0.0
-{'name': 'Guatemala', 'dem_index': 4.97}: 0.0
-{'name': 'Kyrgyzstan', 'dem_index': 4.21}: 0.0
+{'name': 'Iran (Islamic Republic of)', 'dem_index': 2.2}: 0.0
 {'name': 'Mexico', 'dem_index': 6.07}: 0.0
 {'name': 'Monaco', 'dem_index': -1}: 0.0
 {'name': 'Mongolia', 'dem_index': 6.48}: 0.0
 {'name': 'Republic of Moldova*', 'dem_index': 5.78}: 0.0
-{'name': 'Oman', 'dem_index': 3.0}: 0.0
-{'name': 'New Zealand*', 'dem_index': 9.25}: 0.0
 {'name': 'Guinea-Bissau', 'dem_index': 2.63}: 0.0
-{'name': 'Qatar', 'dem_index': 3.24}: 0.0
-{'name': 'Sierra Leone', 'dem_index': 4.86}: 0.0
-{'name': 'Singapore', 'dem_index': 6.03}: 0.0
-{'name': 'Slovakia', 'dem_index': 6.97}: 0.0
-{'name': 'Tajikistan', 'dem_index': 1.94}: 0.0
-{'name': 'United Arab Emirates', 'dem_index': 2.7}: 0.0
 {'name': 'Turkmenistan', 'dem_index': 1.72}: 0.0
-{'name': 'North Macedonia', 'dem_index': 5.89}: 0.0
-{'name': 'Uzbekistan', 'dem_index': 2.12}: 0.0
-{'name': 'Luxembourg', 'dem_index': 8.68}: 0.0
-{'name': 'Barbados', 'dem_index': -1}: 0.0
 {'name': 'Bermuda*', 'dem_index': -1}: 0.0
-{'name': 'Bolivia (Plurinational State of)', 'dem_index': 5.08}: 0.0
-{'name': 'British Virgin Islands*', 'dem_index': -1}: 0.0
-{'name': 'Fiji', 'dem_index': 5.72}: 0.0
-{'name': 'Guyana', 'dem_index': 6.01}: 0.0
-{'name': 'Iceland', 'dem_index': 9.37}: 0.0
-{'name': 'Jamaica', 'dem_index': 7.13}: 0.0
 {'name': "Lao People's Democratic Republic", 'dem_index': 1.77}: 0.0
-{'name': 'Latvia', 'dem_index': 7.24}: 0.0
-{'name': 'Lithuania', 'dem_index': 7.13}: 0.0
 {'name': 'Malta', 'dem_index': 7.68}: 0.0
-{'name': 'Nauru', 'dem_index': -1}: 0.0
-{'name': 'Nicaragua', 'dem_index': 3.6}: 0.0
-{'name': 'Niue*', 'dem_index': -1}: 0.0
-{'name': 'Northern Mariana Islands*', 'dem_index': -1}: 0.0
-{'name': 'Panama', 'dem_index': 7.18}: 0.0
 {'name': 'Papua New Guinea', 'dem_index': 6.1}: 0.0
-{'name': 'Paraguay', 'dem_index': 6.18}: 0.0
 {'name': 'Saint Helena*', 'dem_index': -1}: 0.0
-{'name': 'Saint Kitts and Nevis', 'dem_index': -1}: 0.0
-{'name': 'Trinidad and Tobago', 'dem_index': 7.16}: 0.0
 {'name': 'Uruguay', 'dem_index': 8.61}: 0.0
-{'name': 'Viet Nam', 'dem_index': 2.94}: 0.0
 {'name': 'Timor-Leste', 'dem_index': 7.06}: 0.0
-{'name': 'United States Virgin Islands*', 'dem_index': -1}: 0.0
-{'name': 'Andorra', 'dem_index': -1}: 0.0
 {'name': 'Bhutan', 'dem_index': 5.71}: 0.0
 {'name': 'Solomon Islands', 'dem_index': -1}: 0.0
 {'name': 'Cambodia', 'dem_index': 3.1}: 0.0
-{'name': 'Costa Rica', 'dem_index': 8.16}: 0.0
-{'name': 'Dominica', 'dem_index': -1}: 0.0
-{'name': 'Kiribati', 'dem_index': -1}: 0.0
 {'name': 'Haiti', 'dem_index': 4.22}: 0.0
-{'name': 'Honduras', 'dem_index': 5.36}: 0.0
-{'name': 'Liechtenstein', 'dem_index': -1}: 0.0
-{'name': 'Micronesia (Fed. States of)', 'dem_index': -1}: 0.0
-{'name': 'Marshall Islands', 'dem_index': -1}: 0.0
-{'name': 'Palau', 'dem_index': -1}: 0.0
-{'name': 'Saint Vincent and the Grenadines', 'dem_index': -1}: 0.0
-{'name': 'Tonga', 'dem_index': -1}: 0.0
-{'name': 'Samoa', 'dem_index': -1}: 0.0
-{'name': 'American Samoa*', 'dem_index': -1}: 0.0
-{'name': 'French Polynesia*', 'dem_index': -1}: 0.0
-{'name': 'Grenada', 'dem_index': -1}: 0.0
-{'name': 'Guadeloupe*', 'dem_index': -1}: 0.0
-{'name': 'Turks and Caicos Islands*', 'dem_index': -1}: 0.0
-{'name': 'Georgia*', 'dem_index': 5.31}: 0.0
 {'name': '"   China Macao SAR*"', 'dem_index': -1}: 0.0
-{'name': 'Guam*', 'dem_index': -1}: 0.0
-{'name': 'Aruba*', 'dem_index': -1}: 0.0
-{'name': 'Puerto Rico*', 'dem_index': -1}: 0.0
-{'name': 'Suriname', 'dem_index': 6.82}: 0.0
-{'name': 'Anguilla*', 'dem_index': -1}: 0.0
-{'name': 'Cayman Islands*', 'dem_index': -1}: 0.0
-{'name': 'Greenland*', 'dem_index': -1}: 0.0
 {'name': 'Isle of Man*', 'dem_index': -1}: 0.0
-{'name': 'Montenegro', 'dem_index': 5.77}: 0.0
 {'name': 'San Marino', 'dem_index': -1}: 0.0
 {'name': 'Vanuatu', 'dem_index': -1}: 0.0
-{'name': 'Belize', 'dem_index': -1}: 0.0
-{'name': 'Saint Lucia', 'dem_index': -1}: 0.0
 {'name': 'Falkland Islands (Malvinas)*', 'dem_index': -1}: 0.0
-{'name': 'New Caledonia*', 'dem_index': -1}: 0.0
 {'name': 'Faroe Islands*', 'dem_index': -1}: 0.0
 {'name': 'Tuvalu', 'dem_index': -1}: 0.0
 {'name': 'Wallis and Futuna Islands*', 'dem_index': -1}: 0.0
 {'name': 'Holy See*', 'dem_index': -1}: 0.0
 {'name': 'Channel Islands*', 'dem_index': -1}: 0.0
-{'name': 'Montserrat*', 'dem_index': -1}: 0.0
 {'name': '"   Bonaire Sint Eustatius and Saba*"', 'dem_index': -1}: 0.0
-{'name': 'Cook Islands*', 'dem_index': -1}: 0.0
 {'name': 'Curaçao*', 'dem_index': -1}: 0.0
 {'name': 'Sint Maarten (Dutch part)*', 'dem_index': -1}: 0.0
-{'name': 'French Guiana*', 'dem_index': -1}: 0.0
 {'name': 'Martinique*', 'dem_index': -1}: 0.0
 {'name': 'Saint Pierre and Miquelon*', 'dem_index': -1}: 0.0
-{'name': 'Tokelau*', 'dem_index': -1}: 0.0
