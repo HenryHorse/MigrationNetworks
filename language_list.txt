@@ -10,9 +10,10 @@ Antigua, English
 Argentina, Spanish
 Armenia, Armenian
 Aruba, Papiamento
-Australia, English
-Austria, Germany
+Australia*, English
+Austria, German
 Azerbaijan, Azerbaijani
+Bahamas, English
 Bahrain, Arabic
 Bangladesh, Bangala
 Barbados, English
@@ -23,48 +24,69 @@ Benin, French
 Bermuda, English
 Bhutan, Sharchopkha, Dzongkha
 Bolivia, Spanish
-Bosnia, Bosnian, Serbian
+Bosnia and Herzegovina, Bosnian, Serbian
 Botswana, Setswana
 Brazil, Portuguese
+Brunei Darussalam, Malay
 Bulgaria, Bulgarian
-Burma, Burmese
+Burkina Faso, French
+Myanmar, Burmese
+Cabo Verde, Portuguese
 Cambodia, Khmer
 Cameroon, French, English
 Canada, English, French
 Cayman Islands, English
+Central African Republic, French
+Chad, French
 Chile, Spanish
-China, Mandarin
+China*, Mandarin
 Colombia, Spanish
 Comoros, Arabic, French
-Democratic Republic of Congo, French
+Democratic Republic of the Congo, French
+Congo, French
 Costa Rica, Spanish
 Croatia, Croatian
 Cuba, Spanish
 Cyprus, Greek
 Czechia, Czechi
-Denmark, Danish, English
+Denmark*, Danish, English
 Djibouti, French, Arabic
 Dominican Republic, Spanish
 Ecuador, Spanish
+Equatorial Guinea, Spanish
 Egypt, Arabic, English
 El Salvador, Spanish
+Eswatini, Swati
+Estonia, Estonian
+Ethiopia, Amharic
+Eritrea, Arabic
+Falkland Islands (Malvinas)*, English
+Faroe Islands*, Faroese
 Fiji, English
 Finland, Finnish
-France, French
+France*, French
+French Polynesia*, French
 Gabon, French
+Gambia, English
 Germany, German
+Ghana, English
+Grenada, English
 Greece, Greek
+Greenland*, Greenlandic
 Guam, English, Filipino
 Guatemala, Spanish
+Guadeloupe*, French
 Guinea, French
+Guinea-Bissau, Portuguese
+Guyana, English
 Haiti, French, Creole
 Honduras, Spanish
 Hong Kong, Cantonese
 Hungary, Hungarian, English
 Iceland, Icelandic
 India, Hindi
-Indonesia, Indonesia
-Iran, Persian
+Indonesia, Indonesian
+Iran (Islamic Republic of), Persian
 Iraq, Arabic
 Ireland, English
 Israel, Hebrew
@@ -74,6 +96,7 @@ Japan, Japanese
 Jordan, Arabic, English
 Kazakhstan, Qazaq, Russian
 Kenya, English, Kiswahili
+Kiribati, English
 North Korea, Korean
 South Korea, Korean
 Kosovo, Albanian
@@ -81,6 +104,9 @@ Kuwait, Arabic
 Kyrgyzstan, Kyrgyz
 Latvia, Latvian, Russian
 Labanon, Arabic
+Lao People's Democratic Republic, Lao
+Lebanon, Arabic
+Lesotho, English, Zulu
 Liberia, English
 Libya, Arabic
 Liechtenstein, German
@@ -88,9 +114,13 @@ Lithuania, Lithuanian
 Macau, Cantonese
 Madagascar, Malagasy, French
 Malawi, English
-Malaysia, Bahasa Malaysia
+Malaysia*, Malay
 Maldives, Dhivehi, English
+Mali, French
 Malta, Maltese
+Martinique*, French
+Marshall Islands, Marshallese
+Mauritania, Arabic
 Mexico, Spanish
 Micronesia, English
 Moldova, Romanian
@@ -100,15 +130,21 @@ Montenegro, Serbian, Montenegrin
 Montserrat, English
 Morocco, Arabic
 Mozambique, Makhuwa
+Namibia, English
+Nauru, Nauruan
 Nepal, Nepali
-Netherlands, Dutch
-New Zealand, English
+Netherlands*, Dutch
+New Caledonia*, French
+New Zealand*, English
 Nicaragua, Spanish
 Niger, French
 Nigeria, English
-Norway, Norwegian
+Niue*, Niue
+Northern Mariana Islands*, Carolinian
+Norway*, Norwegian
 Oman, Arabic
 Pakistan, Punjabi
+Palau, Palauan
 Panama, Spanish
 Papua New Guinea, Tok Pisin, English
 Paraguay, Spanish, Guarani
@@ -116,32 +152,42 @@ Peru, Spanish
 Philippines, Tagalog
 Poland, Polish
 Portugal, Portuguese
-Puerto Rico, Spanish, English
+Puerto Rico*, Spanish, English
 Quatar, Arabic, English
 Romania, Romanian
-Russia, Russian
+Russian Federation, Russian
 Rwanda, Kinyarwanda
+Saint Kitts and Nevis, English
+Saint Lucia, English
+Saint Pierre and Miquelon*, French
+Saint Vincent and the Grenadines, English
+Samoa, Samoan
+Sao Tome and Principe, Portuguese
 Saudi Arabia, Arabic
 Senegal, French
-Serbia, Serbian
+Serbia*, Serbian
+Seychelles, Creole
 Sierra Leone, English
 Singapore, English, Mandarin
 Slovakia, Slovak
 Slovenia, Slovene
 Somalia, Somali
+Solomon Islands, English
 South Africa, Zulu
 South Sudan, English, Arabic
-Spain, Spanish
+Spain*, Spanish
 Sri Lanka, Sinhala
 Sudan, Arabic, English
 Suriname, Dutch, English
 Sweden, Swedish
 Switzerland, German, French
 Syria, Arabic
+Syrian Arab Republic, Arabic
 Taiwan, Mandarin
 Tajikistan, Tajik
-Tanzania, Swahili, English
+United Republic of Tanzania*, Swahili, English
 Thailand, Thai
+Timor-Leste, Tetun
 Togo, French
 Tonga, Tongan
 Trinidad and Tobago, English
@@ -152,14 +198,19 @@ Turks and Caicos, English
 Uganda, English, Swahili
 Ukraine, Ukranian, Russian
 United Arab Emirates, Arabic, English
-United Kingdom, English
-United States, English
+United Kingdom*, English
+United States of America*, English
+United States Virgin Islands*, English
 Uruguay, Spanish
 Uzbekistan, Uzbek
-Venezuela, Spanish
-Vietname, Vietnamese
+Vanuatu, English
+Venezuela (Bolivarian Republic of), Spanish
+Viet Nam, Vietnamese
 Virgin Islands, English
+Wallis and Futuna Islands*, French
+Western Sahara, Arabic
 Yemen, Arabic
+Zambia, English
 Zimbabwe, Shona
 
 
