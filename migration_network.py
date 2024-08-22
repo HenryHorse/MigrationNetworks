@@ -5,36 +5,28 @@ import matplotlib.pyplot as plt
 import sys
 from mpl_toolkits.basemap import Basemap
 
-MIN_EDGE_WEIGHT = 100000
+MIN_EDGE_WEIGHT = 10000
 MIN_EDGE_PERCENTAGE = 0.001
 BIN_SIZE = 5
-EDGE_SCALING = 1
+EDGE_SCALING = 0.000001
 
 
 def main():
     # get data from main UN dataset
     migration_flows = []
-    f = open("undesa_pd_2020_ims_stock_by_sex_destination_and_origin.csv", "r")
+    f = open("bilat_mig.csv", "r")
     csv_lines = f.readlines()
-    csv_lines = csv_lines[11:]
-    split_lines = []
+    csv_lines = csv_lines[1:]
     for line in csv_lines:
-        split_lines.append(line.split(','))
-    non_countries = ['900', '947', '1833', '921', '1832', '1830', '1835', '927', '1829', '901', '902', '934', \
-                    '948', '941', '1636', '1637', '1503', '1517', '1502', '1501', '1500', '903', '910', '911', \
-                        '912', '913', '914', '935', '5500', '906', '920', '5501', '922', '908', '923', '924', \
-                            '925', '926', '904', '915', '916', '931', '905', '909', '927', '928', '954', '957']
-    for line in split_lines:
-        if (line[3] not in non_countries and line[6] not in non_countries
-            and line[3].isnumeric() and line[6].isnumeric()):
-            migration_flows.append(line)
+        migration_flows.append(line.split(','))
     f.close()
 
     country_list = []
-    f_countries = open("country_list.txt", "r")
+    f_countries = open("country_list.csv", "r")
     csv_lines = f_countries.readlines()
+    csv_lines = csv_lines[1:]
     for line in csv_lines:
-        country_list.append(line.strip().split(","))
+        country_list.append(line.split(","))
     f_countries.close()
 
     # get data from politics dataset
@@ -46,14 +38,23 @@ def main():
         politics.append(line.split(','))
     f_politics.close()
 
+    country_code_mapping = {}
+    country_codes = open("mapping.csv", "r")
+    mapping_lines = country_codes.readlines()
+    for line in mapping_lines:
+        map = line.split(',')
+        country_code_mapping[map[0]] = map[1]
+
+
     # get year and politics indices
-    year_index = get_year_index()
+    year = sys.argv[1]
     population_index = get_population_index()
     politics_index = get_politics_index()
+    flow_estimate_type = get_flow_index()
 
     # create graph and get data
     G = nx.DiGraph()
-    data = get_data(G, migration_flows, country_list, politics, year_index, population_index, politics_index)
+    data = get_data(G, migration_flows, country_list, politics, year, population_index, politics_index, flow_estimate_type, country_code_mapping)
     
     # BETWEENNESS CENTRALITY
     betweenness_centrality(G)
@@ -76,22 +77,21 @@ def main():
 
     do_politics(data, country_list, politics, population_index, politics_index)
 
-def get_year_index():
-    year = sys.argv[1]
-    if (year == "1990"):
+
+def get_flow_index():
+    flow_estimate = sys.argv[2]
+    if flow_estimate == "sd_drop_neg":
+        return 3
+    if flow_estimate == "sd_rev_neg":
+        return 4
+    if flow_estimate == "mig_rate":
+        return 5
+    if flow_estimate == "da_min_open":
+        return 6
+    if flow_estimate == "da_min_closed":
         return 7
-    elif (year == "1995"):
+    if flow_estimate == "da_pb_closed":
         return 8
-    elif (year == "2000"):
-        return 9
-    elif (year == "2005"):
-        return 10
-    elif (year == "2010"):
-        return 11
-    elif (year == "2015"):
-        return 12
-    elif (year == "2020"):
-        return 13
     
 def get_population_index():
     year = sys.argv[1]
@@ -117,51 +117,53 @@ def get_politics_index():
     else:
         return -1
     
-def get_data(G, migration_flows, country_list, politics, year_index, population_index, politics_index):
+def get_data(G, migration_flows, country_list, politics, year, population_index, politics_index, flow_estimate_type, country_code_mapping):
     data = [] # dataset containing all migration flows
     for line in migration_flows:
-        origin_name = line[5].strip()
-        origin_code = line[6].strip()
-        dest_name = line[1].strip()
-        dest_code = line[3].strip()
-        string_migrants = line[year_index].strip().replace(" ", "")
-        if string_migrants != '..':
-            num_migrants = int(string_migrants)
-            origin_dem = -1
-            dest_dem = -1
-            if (politics_index >= 0):
-                for country in politics:
-                    if country[0].strip() == origin_name:
-                        origin_dem = float(country[politics_index].strip())
-                    elif country[0].strip() == dest_name:
-                        dest_dem = float(country[politics_index].strip())
-            origin_pop = 0
-            dest_pop = 0
-            for country in country_list:
-                if (country[0].strip() == origin_name):
-                    origin_pop = country[population_index]
-                elif (country[0].strip() == dest_name):
-                    dest_pop = country[population_index]
-            if int(origin_pop) > 0:
-                migrant_percentage = int(num_migrants) / int(origin_pop)
-            else:
-                migrant_percentage = -1
-            data.append({"origin_name": origin_name,
-                        "origin_code": origin_code,
-                        "dest_name": dest_name,
-                        "dest_code": dest_code,
-                        "origin_pop": origin_pop,
-                        "dest_pop": dest_pop,
-                        "migrants": num_migrants,
-                        "migrant_percentage": migrant_percentage,
-                        "origin_dem": origin_dem,
-                        "dest_dem": dest_dem})
-            G.add_node(dest_code, name=dest_name, dem_index=dest_dem)
-            G.add_node(origin_code, name=origin_name, dem_index=origin_dem)
-            # if (num_migrants > MIN_EDGE_WEIGHT):
-            #     G.add_edge(origin_code, dest_code, weight=num_migrants)
-            if (migrant_percentage > MIN_EDGE_PERCENTAGE):
-                G.add_edge(origin_code, dest_code, weight=migrant_percentage)
+        if line[0] == year:
+            origin_code = line[1].strip()
+            origin_name = country_code_mapping[origin_code].strip()
+            dest_code = line[2].strip()
+            dest_name = country_code_mapping[dest_code].strip()
+            if dest_code != origin_code:
+                num_migrants = line[flow_estimate_type]
+                num_migrants = float(num_migrants)
+                if num_migrants > 0:
+                    origin_dem = -1
+                    dest_dem = -1
+                    if (politics_index >= 0):
+                        for country in politics:
+                            if country[0].strip() == origin_name:
+                                origin_dem = float(country[politics_index].strip())
+                            elif country[0].strip() == dest_name:
+                                dest_dem = float(country[politics_index].strip())
+                    origin_pop = 0
+                    dest_pop = 0
+                    for country in country_list:
+                        if (country[0].strip() == origin_name):
+                            origin_pop = country[population_index]
+                        elif (country[0].strip() == dest_name):
+                            dest_pop = country[population_index]
+                    if int(origin_pop) > 0:
+                        migrant_percentage = int(num_migrants) / int(origin_pop)
+                    else:
+                        migrant_percentage = -1
+                    data.append({"origin_name": origin_name,
+                            "origin_code": origin_code,
+                            "dest_name": dest_name,
+                            "dest_code": dest_code,
+                            "origin_pop": origin_pop,
+                            "dest_pop": dest_pop,
+                            "migrants": num_migrants,
+                            "migrant_percentage": migrant_percentage,
+                            "origin_dem": origin_dem,
+                            "dest_dem": dest_dem})
+                    G.add_node(dest_code, name=dest_name, dem_index=dest_dem)
+                    G.add_node(origin_code, name=origin_name, dem_index=origin_dem)
+                    if (num_migrants > MIN_EDGE_WEIGHT):
+                        G.add_edge(origin_code, dest_code, weight=num_migrants)
+                    # if (migrant_percentage > MIN_EDGE_PERCENTAGE):
+                    #     G.add_edge(origin_code, dest_code, weight=migrant_percentage)
     return data
 
 def betweenness_centrality(G):
@@ -261,7 +263,7 @@ def draw_map(G, country_list):
         nx.draw_networkx_edges(G, pos, edgelist=[(c1, c2)], edge_color=edge_color, width=edge_widths)
 
     # Show map
-    plt.title('Global Migration Network')
+    plt.title('Global Migration Network ' + sys.argv[1])
     plt.show()
 
 def draw_network(G):
@@ -319,7 +321,7 @@ def do_politics(data, country_list, politics, population_index, politics_index):
     # Plot in-degree distribution
     plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st subplot
     plt.bar([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], emigrated_dem_index, color='green', alpha=0.7, edgecolor='black')
-    plt.title('Democracy Index of countries emigrated from')
+    plt.title('Democracy Index of countries emigrated from in ' + sys.argv[1])
     plt.xlabel('Democracy Index')
     plt.ylabel('Percentage of World Population')
     plt.grid(True, which='both', linestyle='--', linewidth=0.5)
@@ -327,7 +329,7 @@ def do_politics(data, country_list, politics, population_index, politics_index):
     # Plot out-degree distribution
     plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd subplot
     plt.bar([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], immigrated_dem_index, color='red', alpha=0.7, edgecolor='black')
-    plt.title('Democracy Index of countries immigrated to')
+    plt.title('Democracy Index of countries immigrated to in ' + sys.argv[1])
     plt.xlabel('Democracy Index')
     plt.ylabel('Percentage of World Population')
     plt.grid(True, which='both', linestyle='--', linewidth=0.5)
