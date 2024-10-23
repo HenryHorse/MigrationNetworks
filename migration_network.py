@@ -4,11 +4,14 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import sys
 from mpl_toolkits.basemap import Basemap
+import numpy as np
 
 MIN_EDGE_WEIGHT = 10000
 MIN_EDGE_PERCENTAGE = 0.001
-BIN_SIZE = 5
-EDGE_SCALING = 0.000001
+BIN_SIZE = 200000
+EDGE_SCALING = 0.0000005
+# EDGE_SCALING = 10
+
 
 
 def main():
@@ -56,6 +59,12 @@ def main():
     G = nx.DiGraph()
     data = get_data(G, migration_flows, country_list, politics, year, population_index, politics_index, flow_estimate_type, country_code_mapping)
     
+    print("Number of Nodes: ")
+    print(G.number_of_nodes())
+
+    print("Number of Edges: ")
+    print(G.number_of_edges())
+
     # BETWEENNESS CENTRALITY
     betweenness_centrality(G)
 
@@ -69,6 +78,8 @@ def main():
 
     # DEGREE DISTRIBUTION (in, out, total)
     degree_distribution(G)
+    alternate_degree_distribution(G)
+    weighted_degree_distribution(G)
 
     # Get latitudes and longitudes
     draw_map(G, country_list)
@@ -158,6 +169,8 @@ def get_data(G, migration_flows, country_list, politics, year, population_index,
                             "migrant_percentage": migrant_percentage,
                             "origin_dem": origin_dem,
                             "dest_dem": dest_dem})
+                    # valid_countries = {"Germany", "France", "Spain", "Greece", "Italy"}
+                    # if dest_name in valid_countries and origin_name in valid_countries:
                     G.add_node(dest_code, name=dest_name, dem_index=dest_dem)
                     G.add_node(origin_code, name=origin_name, dem_index=origin_dem)
                     if (num_migrants > MIN_EDGE_WEIGHT):
@@ -167,7 +180,7 @@ def get_data(G, migration_flows, country_list, politics, year, population_index,
     return data
 
 def betweenness_centrality(G):
-    betweenness = nx.betweenness_centrality(G)
+    betweenness = nx.betweenness_centrality(G, weight='weight')
     sorted_betweenness = sorted(betweenness.items(), key=lambda item: item[1], reverse=True)
     with open("bc_out.txt", "w") as file:
         for node, bc in sorted_betweenness:
@@ -183,9 +196,9 @@ def clustering_coefficient(G):
     file.close()
 
 def degree_distribution(G):
-    in_degrees = dict(G.in_degree())  # Returns a dictionary with node:in-degree pairs
-    out_degrees = dict(G.out_degree())  # Returns a dictionary with node:out-degree pairs
-    total_degrees = dict(G.degree())  # Returns a dictionary with node:total-degree (in + out) pairs
+    in_degrees = dict(G.in_degree(weight='weight'))  # Returns a dictionary with node:in-degree pairs
+    out_degrees = dict(G.out_degree(weight='weight'))  # Returns a dictionary with node:out-degree pairs
+    total_degrees = dict(G.degree(weight='weight'))  # Returns a dictionary with node:total-degree (in + out) pairs
     in_degree_values = list(in_degrees.values())
     out_degree_values = list(out_degrees.values())
     total_degree_values = list(total_degrees.values())
@@ -195,23 +208,91 @@ def degree_distribution(G):
 
     # Plot in-degree distribution
     plt.subplot(1, 2, 1)  # 1 row, 2 columns, 1st subplot
-    plt.hist(in_degree_values, bins=range(0, max(in_degree_values) + 2, BIN_SIZE), color='green', alpha=0.7, edgecolor='black')
-    plt.title('In-Degree Distribution')
-    plt.xlabel('In-Degree')
+    plt.hist(in_degree_values, bins=np.arange(0, 12500000, BIN_SIZE), color='green', alpha=0.7, edgecolor='black')
+    plt.title('Weighted In-Degree Distribution')
+    plt.xlabel('In-Degree (Raw Number of Migrants)')
     plt.ylabel('Frequency')
     plt.grid(True, which='both', linestyle='--', linewidth=0.5)
 
     # Plot out-degree distribution
     plt.subplot(1, 2, 2)  # 1 row, 2 columns, 2nd subplot
-    plt.hist(out_degree_values, bins=range(0, max(out_degree_values) + 2, BIN_SIZE), color='red', alpha=0.7, edgecolor='black')
-    plt.title('Out-Degree Distribution')
-    plt.xlabel('Out-Degree')
+    plt.hist(out_degree_values, bins=np.arange(0, 9000000, BIN_SIZE), color='red', alpha=0.7, edgecolor='black')
+    plt.title('Weighted Out-Degree Distribution')
+    plt.xlabel('Out-Degree (Raw Number of Migrants)')
     plt.ylabel('Frequency')
     plt.grid(True, which='both', linestyle='--', linewidth=0.5)
 
     # Show plot
     plt.tight_layout()  # Adjusts subplots to fit into figure area.
     plt.show()
+
+def alternate_degree_distribution(G):
+    with open("in_degree_out.txt", "w") as in_file, open("out_degree_out.txt", "w") as out_file:
+        # Process in-degree
+        in_degree = G.in_degree()
+        sorted_in_degree = sorted(in_degree, key=lambda item: item[1], reverse=True)
+        for node, degree in sorted_in_degree:
+            dem_index = G.nodes[node]['dem_index']
+            negative_dem_in_count = sum(
+                1 for neighbor in G.predecessors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index < 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            positive_dem_in_count = sum(
+                1 for neighbor in G.predecessors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index > 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            in_file.write(f"{G.nodes[node]}: {degree}, negative_dem_in_count: {negative_dem_in_count}, positive_dem_in_count: {positive_dem_in_count}\n")
+
+        # Process out-degree
+        out_degree = G.out_degree()
+        sorted_out_degree = sorted(out_degree, key=lambda item: item[1], reverse=True)
+        for node, degree in sorted_out_degree:
+            dem_index = G.nodes[node]['dem_index']
+            pos_dem_out_count = sum(
+                1 for neighbor in G.successors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index > 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            neg_dem_out_count = sum(
+                1 for neighbor in G.successors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index < 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            out_file.write(f"{G.nodes[node]}: {degree}, positive_dem_out_count: {pos_dem_out_count}, negative_dem_Out_count: {neg_dem_out_count}\n")
+
+
+
+def weighted_degree_distribution(G):
+    with open("weighted_in_degree_out.txt", "w") as in_file, open("weighted_out_degree_out.txt", "w") as out_file:
+        # Process weighted in-degree
+        # Note that this won't make much sense for weighting by percentage
+        weighted_in_degree = G.in_degree(weight='weight')
+        sorted_in_degree = sorted(weighted_in_degree, key=lambda item: item[1], reverse=True)
+        for node, degree in sorted_in_degree:
+            dem_index = G.nodes[node]['dem_index']
+            negative_weighted_dem_in_count = sum(
+                G[neighbor][node]['weight'] for neighbor in G.predecessors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index < 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            positive_weighted_dem_in_count = sum(
+                G[node][neighbor]['weight'] for neighbor in G.successors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index > 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            in_file.write(f"{G.nodes[node]}: {degree}, negative_weighted_dem_in_count: {negative_weighted_dem_in_count}, positive_weighted_dem_in_count: {positive_weighted_dem_in_count}\n")
+
+        # Process weighted out-degree
+        weighted_out_degree = G.out_degree(weight='weight')
+        sorted_out_degree = sorted(weighted_out_degree, key=lambda item: item[1], reverse=True)
+        for node, degree in sorted_out_degree:
+            dem_index = G.nodes[node]['dem_index']
+            positive_weighted_dem_out_count = sum(
+                G[node][neighbor]['weight'] for neighbor in G.successors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index > 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            negative_weighted_dem_out_count = sum(
+                G[node][neighbor]['weight'] for neighbor in G.successors(node)
+                if G.nodes[neighbor]['dem_index'] - dem_index < 0 and G.nodes[neighbor]['dem_index'] >= 0 and dem_index >= 0
+            )
+            out_file.write(f"{G.nodes[node]}: {degree}, positive_weighted_dem_out_count: {positive_weighted_dem_out_count}, negative_weighted_dem_out_count: {negative_weighted_dem_out_count}\n")
+
 
 def draw_map(G, country_list):
     countries = {}
@@ -236,7 +317,7 @@ def draw_map(G, country_list):
             lat, lon = countries[country]
             pos[node[0]] = m(lon, lat)  # Map projection coordinates
         else:
-            #print(f"Warning: No coordinates found for {country}")
+            print(f"Warning: No coordinates found for {country}")
             removed_nodes.append(node[0])
     for node in removed_nodes:
         G.remove_node(node)
@@ -244,6 +325,8 @@ def draw_map(G, country_list):
     # Draw nodes with geographical positions
     nx.draw_networkx_nodes(G, pos, node_size=20, node_color='blue', alpha=0.6, ax=plt.gca())
 
+    num_blue = 0
+    num_red = 0
     # Draw edges with geographical positions
     for c1, c2, cdata in G.edges(data=True):
         origin_name = G.nodes[c1]['name']
@@ -257,11 +340,15 @@ def draw_map(G, country_list):
         if origin_dem != -1 and dest_dem != -1:
             if dest_dem > origin_dem:
                 edge_color = 'blue'
+                num_blue += 1
             elif dest_dem < origin_dem:
                 edge_color = 'red'
+                num_red +=1 
 
         nx.draw_networkx_edges(G, pos, edgelist=[(c1, c2)], edge_color=edge_color, width=edge_widths)
 
+    print("Number of Blue Edges: " + str(num_blue))
+    print("Number of Red Edges: " + str(num_red))
     # Show map
     plt.title('Global Migration Network ' + sys.argv[1])
     plt.show()
